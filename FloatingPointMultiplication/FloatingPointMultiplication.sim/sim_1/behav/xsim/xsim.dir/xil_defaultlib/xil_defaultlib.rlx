@@ -1,0 +1,13 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/Sim_test.vhd,1538903710,vhdl,,,,sim_test,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA16bits.vhd,1538859036,vhdl2008,,,,simulationcla16bits,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA32bits.vhd,1538859974,vhdl,,,,simulationcla32bits,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA4bits.vhd,1538856027,vhdl,,,,simulationcla4bits,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AddExponents.vhd,1538903917,vhdl,,,,addexponents,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd,1538859243,vhdl2008,,,,cla16bits,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd,1538859588,vhdl2008,,,,cla32bits,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd,1538859249,vhdl2008,,,,cla4bits,,,,,,,,
+/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd,1538856566,vhdl,,,,modulepg,,,,,,,,

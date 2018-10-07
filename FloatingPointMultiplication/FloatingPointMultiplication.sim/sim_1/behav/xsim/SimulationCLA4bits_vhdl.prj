@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd" \
+"../../../../FloatingPointMultiplication.srcs/sources_1/new/PG.vhd" \
+"../../../../FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA4bits.vhd" \
+
+# Do not sort compile order
+nosort

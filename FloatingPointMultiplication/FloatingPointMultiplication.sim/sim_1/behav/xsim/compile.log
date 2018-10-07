@@ -1,0 +1,58 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ModulePG
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ModulePG
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ModulePG
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ModulePG
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA32bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA4bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA32bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA32bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/SimulationCLA32bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SimulationCLA32bits
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AddExponents.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AddExponents
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/Sim_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Sim_test
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AddExponents.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AddExponents
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/Sim_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Sim_test
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/Sim_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Sim_test
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AddExponents.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AddExponents
