@@ -28,17 +28,16 @@ begin
     
     sim_proc: process 
     begin
-        wait for 100ns;
-        A <= x"00000F";
+        A <= x"000001";
         B <= x"000001";
         
         wait for 100ns;
-        A <= x"00000F";
+        A <= x"000001";
         B <= x"00000F";
         
         wait for 100ns;
-        A <= x"00000A";
-        B <= x"0000ED";
+        A <= x"00000F";
+        B <= x"000001";
         
         wait for 100ns;
         A <= x"000003";
@@ -67,6 +66,8 @@ begin
         wait for 100ns;
         A <= x"001112";
         B <= x"00FEDA";
+        
+        wait for 100ns;
     end process;
 
 end Behavioral;

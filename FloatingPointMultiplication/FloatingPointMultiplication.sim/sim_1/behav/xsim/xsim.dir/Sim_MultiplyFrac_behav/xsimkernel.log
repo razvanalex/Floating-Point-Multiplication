@@ -1,7 +1,7 @@
-Running: xsim.dir/Sim_MultiplyFrac_behav/xsimk -simmode gui -wdb Sim_MultiplyFrac_behav.wdb -simrunnum 0 -socket 51803
+Running: xsim.dir/Sim_MultiplyFrac_behav/xsimk -simmode gui -wdb Sim_MultiplyFrac_behav.wdb -simrunnum 0 -socket 58841
 Design successfully loaded
-Design Loading Memory Usage: 47744 KB (Peak: 47796 KB)
-Design Loading CPU Usage: 40 ms
+Design Loading Memory Usage: 49484 KB (Peak: 49484 KB)
+Design Loading CPU Usage: 20 ms
 Simulation completed
-Simulation Memory Usage: 129480 KB (Peak: 195016 KB)
-Simulation CPU Usage: 60 ms
+Simulation Memory Usage: 139836 KB (Peak: 196756 KB)
+Simulation CPU Usage: 40 ms

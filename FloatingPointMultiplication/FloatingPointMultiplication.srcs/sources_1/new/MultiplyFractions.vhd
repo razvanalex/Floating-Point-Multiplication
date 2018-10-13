@@ -23,14 +23,18 @@ architecture Behavioral of MultiplyFractions is
     end component;
     
     -- Create a new type for the input of the adders
-    type ADDER_BUS is array (23 downto 0) of std_logic_vector(23 downto 0);
+    type ADDER_BUS is array (23 downto 0) of std_logic_vector(31 downto 0);
     
     -- Create 46 buses, 2 for each adder, and init them with 0.
     signal A_BUS : ADDER_BUS := (others => (others => '0'));
     signal B_BUS : ADDER_BUS := (others => (others => '0'));
     
+    -- Create a 23 auxilliary buses
+    signal SUM_BUS : ADDER_BUS := (others => (others => '0'));
+    
     signal HiddenBit_A : std_logic_vector(23 downto 0);
     signal HiddenBit_B : std_logic_vector(23 downto 0);
+    
 begin
     -- Add the hidden bit to the number A
     HiddenBit_A(22 downto 0) <= A;
@@ -47,19 +51,16 @@ begin
     A_BUS(0)(22 downto 0) <= HiddenBit_A(23 downto 1) when HiddenBit_B(0) = '1' else (others => '0');
     A_BUS(0)(23) <= '0';
     B_BUS(0)(23 downto 0) <= HiddenBit_A(23 downto 0) when HiddenBit_B(1) = '1' else (others => '0');
-    adder1: CLA32bits port map(a => A_BUS(0), b => B_BUS(0), cin => '0',
-    sum(23 downto 1) => A_BUS(1)(22 downto 0), -- TODO: SOLVE THE ERROR
-    --sum(31 downto 24) => A_BUS(2)(7 downto 0), 
-    cout => A_BUS(1)(23));
+    adder1: CLA32bits port map(a => A_BUS(0), b => B_BUS(0), cin => '0', sum => SUM_BUS(0), cout => A_BUS(1)(23));
+    A_BUS(1)(22 downto 0) <= SUM_BUS(0)(23 downto 1);
     
     -- nth Adder
-    GEN: for i in 1 to 22 generate
+    GEN: for i in 1 to 22 generate    
         B_BUS(i)(23 downto 0) <= HiddenBit_A(23 downto 0) when HiddenBit_B(i + 1) = '1' else (others => '0');
-        adderNth: CLA32bits port map(a => A_BUS(i), b => B_BUS(i), cin => '0', 
-        sum(23 downto 1) => A_BUS(i + 1)(22 downto 0),  -- TODO: SOLVE THE ERROR
-        cout => A_BUS(i + 1)(23));
+        adderNth: CLA32bits port map(a => A_BUS(i), b => B_BUS(i), cin => '0', sum => SUM_BUS(i), cout => A_BUS(i + 1)(23));
+        A_BUS(i + 1)(22 downto 0) <= SUM_BUS(i)(23 downto 1);
     end generate GEN;
     
     -- Return the result of the multiplication
-    result <= A_BUS(23);
+    result <= A_BUS(23)(22 downto 0);
 end Behavioral;
