@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AddExponents.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity AddExponents
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplyFractions

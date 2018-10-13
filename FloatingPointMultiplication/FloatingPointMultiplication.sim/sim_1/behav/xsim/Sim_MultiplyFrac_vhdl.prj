@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd" \
+"../../../../FloatingPointMultiplication.srcs/sources_1/new/PG.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd" \
+"../../../../FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd" \
+"../../../../FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../FloatingPointMultiplication.srcs/sim_1/new/Sim_MultiplyFrac.vhd" \
+
+# Do not sort compile order
+nosort
