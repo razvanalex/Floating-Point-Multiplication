@@ -139,3 +139,10 @@ Note the loneliest XOR in the top right corner. Gray modules are adders
 
 ![alt text](https://gitlab.cs.pub.ro/razvan.smadu/CN2-Tema-1/raw/859b8ef5a667c9599a89fc6e01872f007904af60/Resources/Image1.png)
 
+
+## References
+[1] https://www.electronicshub.org/binary-multiplication  
+[2] https://www.geeksforgeeks.org/digital-logic-carry-look-ahead-adder/  
+[3] Indrumar_CN_New.pdf - owncloud  
+[4] curs8_algoritmi_initiali_pipe.pdf - owncloud  
+
