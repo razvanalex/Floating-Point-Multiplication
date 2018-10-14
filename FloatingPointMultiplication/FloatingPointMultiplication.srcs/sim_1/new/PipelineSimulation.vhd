@@ -16,7 +16,7 @@ architecture Behavioral of PipelineSimulation is
     end component;
     
     signal clk: std_logic;
-    signal A, B, R: std_logic_vector(31 downto 0);
+    signal A, B, R, RealResult: std_logic_vector(31 downto 0);
 begin
     uut1: MultiplicationPipeline port map(clk => clk, A => A, B => B, R => R);
     
@@ -32,20 +32,59 @@ begin
     stim_proc: process begin
         wait for 5ns;
         
-        A <= x"42F6E989";
-        B <= x"439C0FBE";
+        A <= x"42353EE5";
+        B <= x"48DFDB28";
+        RealResult <= transport x"4B9E7CF3" after 75ns;
         wait for 20ns;
         
-        A <= x"FFFFFFFF";
+        A <= x"45AAD8FF";
+        B <= x"479A30B9";
+        RealResult <= transport x"4DCDCE1B" after 75ns;
+        wait for 20ns;
+        
+        A <= x"35FAD8FF";
+        B <= x"578A297E";
+        RealResult <= transport x"4E0761A2" after 75ns;
+        wait for 20ns;
+        
+        A <= x"28DFC904";
+        B <= x"B7323500";
+        RealResult <= transport x"2DAE9ED0" after 75ns;
+        wait for 20ns;
+        
+        A <= x"494E62A9";
+        B <= x"47564504";
+        RealResult <= transport x"512CBE1D" after 75ns;
+        wait for 20ns;
+        
+        A <= x"40A33333";
+        B <= x"40D40000";
+        RealResult <= transport x"42072666" after 75ns;
+        wait for 20ns;
+        
+        A <= x"40000000";
+        B <= x"4148A3D7";
+        RealResult <= transport x"41C8A3D7" after 75ns;
+        wait for 20ns;
+        
+        A <= x"C2347AE1";
+        B <= x"44140EE9";
+        RealResult <= transport x"C6D0C31A" after 75ns;
+        wait for 20ns;
+        
+        A <= x"C2C98745";
+        B <= x"C24EC14A";
+        RealResult <= transport x"45A2C303" after 75ns;
+        wait for 20ns;
+        
+        A <= x"80000000";
         B <= x"00000000";
+        RealResult <= transport x"80000000" after 75ns;
         wait for 20ns;
         
-        A <= x"3F800000";
-        B <= x"439C0FBE";
-        wait for 20ns;
-        
-        A <= x"7FFFFFFF";
-        B <= x"3F800000";
+        A <= x"BFA00000";
+        B <= x"3FA00000";
+        RealResult <= transport x"BFC80000" after 75ns;
         wait for 1000ns;
         
     end process;
