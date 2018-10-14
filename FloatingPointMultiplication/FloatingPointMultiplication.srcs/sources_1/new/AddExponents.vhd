@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity AddExponents is
 	Port (
 		a, b: in std_logic_vector(7 downto 0);
-		result: out std_logic_vector(7 downto 0);
+		result: out std_logic_vector(8 downto 0);
 		flag: out std_logic_vector(1 downto 0)
 	);
 end AddExponents;
@@ -27,7 +27,7 @@ begin
     input1(7 downto 0) <= a;
     input2(7 downto 0) <= b; 
     add: CLA32bits port map (a => input1, b => input2, cin => '0', sum => output);
-    result <= output(7 downto 0);
+    result <= output(8 downto 0);
     
 	process (a, b)
 	begin

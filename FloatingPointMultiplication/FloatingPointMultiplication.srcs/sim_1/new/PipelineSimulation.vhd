@@ -32,6 +32,7 @@ begin
     stim_proc: process begin
         wait for 5ns;
         
+        -- RANDOM TESTS
         A <= x"42353EE5";
         B <= x"48DFDB28";
         RealResult <= transport x"4B9E7CF3" after 75ns;
@@ -49,7 +50,7 @@ begin
         
         A <= x"28DFC904";
         B <= x"B7323500";
-        RealResult <= transport x"2DAE9ED0" after 75ns;
+        RealResult <= transport x"A09BC819" after 75ns;
         wait for 20ns;
         
         A <= x"494E62A9";
@@ -76,17 +77,57 @@ begin
         B <= x"C24EC14A";
         RealResult <= transport x"45A2C303" after 75ns;
         wait for 20ns;
-        
+
+   
+        -- ZERO TEST
         A <= x"80000000";
         B <= x"00000000";
         RealResult <= transport x"80000000" after 75ns;
         wait for 20ns;
-        
+
+
+        -- ONE TEST
         A <= x"BFA00000";
         B <= x"3FA00000";
         RealResult <= transport x"BFC80000" after 75ns;
-        wait for 1000ns;
+        wait for 20ns;
+            
+            
+        -- ZERO TESTS
+        A <= x"00000000";
+        B <= x"4402DCCD";
+        RealResult <= transport x"00000000" after 75ns;
+        wait for 20ns;
+
+        A <= x"4402AC1F";
+        B <= x"00000000";
+        RealResult <= transport x"00000000" after 75ns;
+        wait for 20ns;
         
+        
+        -- OVERFLOW TESTS
+        A <= x"7F02DCCD";
+        B <= x"60501800";
+        RealResult <= transport x"7F800000" after 75ns;
+        wait for 20ns;
+        
+        A <= x"FB27A03D";
+        B <= x"615EB51D";
+        RealResult <= transport x"FF800000" after 75ns;
+        wait for 20ns;
+
+
+        -- UNDERFLOW TESTS
+        A <= x"07D7EE00";
+        B <= x"035EB51D";
+        RealResult <= transport x"00000000" after 75ns;
+        wait for 20ns;
+             
+        A <= x"A527A03D";
+        B <= x"0BDEB51D";
+        RealResult <= transport x"80000000" after 75ns;
+        wait for 1000ns;
+   
     end process;
 
 end Behavioral;

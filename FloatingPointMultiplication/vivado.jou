@@ -1,0 +1,167 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 14 17:17:31 2018
+# Process ID: 1597
+# Current directory: /home/razvan
+# Command line: vivado
+# Log file: /home/razvan/vivado.log
+# Journal file: /home/razvan/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd w ]
+add_files -fileset sim_1 /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PipelineSimulation [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+reset_run synth_1
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+close_sim
+launch_simulation
+source PipelineSimulation.tcl
+save_project_as project_1 /home/razvan/project_1 -force
+archive_project /home/razvan/project_1.xpr.zip -force -include_local_ip_cache -include_config_settings
+archive_project /home/razvan/project_1.xpr.zip -force -include_local_ip_cache
+archive_project /home/razvan/project_1.xpr.zip -force -include_local_ip_cache
+close_sim
+launch_simulation
+close_project
+open_project /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.xpr
+launch_simulation
+source PipelineSimulation.tcl
+update_compile_order -fileset sources_1
+archive_project /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication.xpr.zip -force -include_local_ip_cache -include_config_settings

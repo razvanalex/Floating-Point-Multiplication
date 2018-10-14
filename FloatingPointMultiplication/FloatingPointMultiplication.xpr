@@ -6,7 +6,7 @@
 <Project Version="7" Minor="35" Path="/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="4a66bd78f0ce427ab4ede01fcd8051bc"/>
+    <Option Name="Id" Val="b62c3323745c4fc4a230c10ad8bcdbdc"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -32,7 +32,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="125"/>
+    <Option Name="WTXSimLaunchSim" Val="135"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -58,72 +58,96 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/AddExponents.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/AddExponents.vhd"/>
+          <Attr Name="ImportTime" Val="1539527494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/AdjustExponent.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/AdjustExponent.vhd"/>
+          <Attr Name="ImportTime" Val="1539536988"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/CLA32bits.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/CLA32bits.vhd"/>
+          <Attr Name="ImportTime" Val="1538859588"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/CorrectExponent.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/CorrectExponent.vhd"/>
+          <Attr Name="ImportTime" Val="1539536547"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/MultiplyFractions.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/MultiplyFractions.vhd"/>
+          <Attr Name="ImportTime" Val="1539524642"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/MultiplyFractionsWithZeroCheck.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/MultiplyFractionsWithZeroCheck.vhd"/>
+          <Attr Name="ImportTime" Val="1539523867"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/Normalize.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/Normalize.vhd"/>
+          <Attr Name="ImportTime" Val="1539534294"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/PG.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/PG.vhd"/>
+          <Attr Name="ImportTime" Val="1538856566"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/Register.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/Register.vhd"/>
+          <Attr Name="ImportTime" Val="1538901681"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/CLA16bits.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/CLA16bits.vhd"/>
+          <Attr Name="ImportTime" Val="1538859243"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/CLA4bit.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/CLA4bit.vhd"/>
+          <Attr Name="ImportTime" Val="1538859249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/MultiplicationPipeline.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/MultiplicationPipeline.vhd"/>
+          <Attr Name="ImportTime" Val="1539537787"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -135,8 +159,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constraints_1/Nexys4DDR_Master.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints_1/Nexys4DDR_Master.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/constraints_1/Nexys4DDR_Master.xdc"/>
+          <Attr Name="ImportTime" Val="1539443009"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -149,6 +175,8 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/PipelineSimulation.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/PipelineSimulation.vhd"/>
+          <Attr Name="ImportTime" Val="1539539537"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -156,6 +184,8 @@
       <File Path="$PSRCDIR/sim_1/new/Sim_MultiplyFrac.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Sim_MultiplyFrac.vhd"/>
+          <Attr Name="ImportTime" Val="1539524061"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -163,6 +193,8 @@
       <File Path="$PSRCDIR/sim_1/new/Sim_test.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Sim_test.vhd"/>
+          <Attr Name="ImportTime" Val="1538903710"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -170,6 +202,8 @@
       <File Path="$PSRCDIR/sim_1/new/SimulationCLA32bits.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/SimulationCLA32bits.vhd"/>
+          <Attr Name="ImportTime" Val="1538859974"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -177,6 +211,8 @@
       <File Path="$PSRCDIR/sim_1/new/SimulationCLA16bits.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/SimulationCLA16bits.vhd"/>
+          <Attr Name="ImportTime" Val="1538859036"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -184,6 +220,8 @@
       <File Path="$PSRCDIR/sim_1/new/SimulationCLA4bits.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/SimulationCLA4bits.vhd"/>
+          <Attr Name="ImportTime" Val="1538856027"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
