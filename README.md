@@ -145,4 +145,5 @@ Note the loneliest XOR in the top right corner. Gray modules are adders
 [2] https://www.geeksforgeeks.org/digital-logic-carry-look-ahead-adder/  
 [3] Indrumar_CN_New.pdf - owncloud  
 [4] curs8_algoritmi_initiali_pipe.pdf - owncloud  
+[5] http://steve.hollasch.net/cgindex/coding/ieeefloat.html
 
