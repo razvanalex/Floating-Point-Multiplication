@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log MultiplyFractionsWithZeroCheck.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractionsWithZeroCheck.tcl" );
+         "-log MultiplyFractions.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractions.tcl" );
 
 
 

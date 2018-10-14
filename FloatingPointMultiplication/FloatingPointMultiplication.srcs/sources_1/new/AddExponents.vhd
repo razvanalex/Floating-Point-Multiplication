@@ -26,8 +26,9 @@ architecture Behavioral of AddExponents is
 begin
     input1(7 downto 0) <= a;
     input2(7 downto 0) <= b; 
-    add: CLA32bits port map (a => input1, b => input2, cin => '0', sum(7 downto 0) => result);
-   
+    add: CLA32bits port map (a => input1, b => input2, cin => '0', sum => output);
+    result <= output(7 downto 0);
+    
 	process (a, b)
 	begin
 		if a = "00000000" and b = "00000000" then

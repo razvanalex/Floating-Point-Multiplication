@@ -1,0 +1,1187 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 14 16:47:30 2018
+# Process ID: 30796
+# Current directory: /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1
+# Command line: vivado -log MultiplyFractions.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractions.tcl
+# Log file: /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1/MultiplyFractions.vds
+# Journal file: /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source MultiplyFractions.tcl -notrace
+Command: synth_design -top MultiplyFractions -part xc7a100tcsg324-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30814 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1296.180 ; gain = 87.988 ; free physical = 122 ; free virtual = 6607
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MultiplyFractions' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:15]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adder1' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:15]
+INFO: [Synth 8-3491] module 'CLA16bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:5' bound to instance 'ual0' of component 'CLA16bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'CLA16bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:15]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual0' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg0' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'ModulePG' (1#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:13]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg1' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:28]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg2' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:29]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg3' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'CLA4bits' (2#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual1' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'CLA4bits__parameterized1' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg0' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:27]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg1' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:28]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg2' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:29]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg3' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'CLA4bits__parameterized1' (2#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual2' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'CLA4bits__parameterized3' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg0' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:27]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg1' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:28]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg2' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:29]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg3' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'CLA4bits__parameterized3' (2#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual3' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'CLA4bits__parameterized5' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg0' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:27]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg1' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:28]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg2' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:29]
+INFO: [Synth 8-3491] module 'ModulePG' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd:5' bound to instance 'pg3' of component 'ModulePG' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'CLA4bits__parameterized5' (2#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'CLA16bits' (3#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:15]
+INFO: [Synth 8-3491] module 'CLA16bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:5' bound to instance 'ual1' of component 'CLA16bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'CLA16bits__parameterized1' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:15]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual0' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:29]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual1' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:30]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual2' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:31]
+INFO: [Synth 8-3491] module 'CLA4bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd:5' bound to instance 'ual3' of component 'CLA4bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'CLA16bits__parameterized1' (3#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'CLA32bits' (4#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:15]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-3491] module 'CLA32bits' declared at '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd:5' bound to instance 'adderNth' of component 'CLA32bits' [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'MultiplyFractions' (5#1) [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1338.711 ; gain = 130.520 ; free physical = 179 ; free virtual = 6621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[1].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[2].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[3].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[4].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[5].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[6].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[7].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[8].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[9].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[10].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[11].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[27] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[26] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[25] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[12].adderNth:a[24] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[13].adderNth:a[31] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[13].adderNth:a[30] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[13].adderNth:a[29] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+WARNING: [Synth 8-3295] tying undriven pin GEN[13].adderNth:a[28] to constant 0 [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd:60]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1338.711 ; gain = 130.520 ; free physical = 179 ; free virtual = 6621
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/constraints_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/constraints_1/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/constraints_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MultiplyFractions_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MultiplyFractions_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1713.984 ; gain = 0.000 ; free physical = 136 ; free virtual = 6363
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 211 ; free virtual = 6439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 211 ; free virtual = 6439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 212 ; free virtual = 6441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 203 ; free virtual = 6432
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 184   
+	   2 Input      1 Bit         XORs := 737   
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 22    
+	   2 Input     23 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MultiplyFractions 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 22    
+	   2 Input     23 Bit        Muxes := 1     
+Module ModulePG 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module CLA4bits 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module CLA4bits__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module CLA4bits__parameterized3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module CLA4bits__parameterized5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 185 ; free virtual = 6414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 130 ; free virtual = 6281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 127 ; free virtual = 6278
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 147 ; free virtual = 6280
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 147 ; free virtual = 6280
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 147 ; free virtual = 6280
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 147 ; free virtual = 6280
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |  1905|
+|3     |LUT3 |   161|
+|4     |LUT4 |   253|
+|5     |LUT5 |    46|
+|6     |LUT6 |   414|
+|7     |IBUF |    48|
+|8     |OBUF |    26|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------+------------------------------+------+
+|      |Instance             |Module                        |Cells |
++------+---------------------+------------------------------+------+
+|1     |top                  |                              |  2854|
+|2     |  adder1             |CLA32bits__1                  |    95|
+|3     |    ual0             |CLA16bits__1                  |    64|
+|4     |      ual0           |CLA4bits__3                   |    12|
+|5     |        pg0          |ModulePG__63                  |     1|
+|6     |        pg1          |ModulePG__62                  |     2|
+|7     |        pg2          |ModulePG__61                  |     2|
+|8     |        pg3          |ModulePG__60                  |     2|
+|9     |      ual1           |CLA4bits__parameterized1__3   |    16|
+|10    |        pg0          |ModulePG__59                  |     2|
+|11    |        pg1          |ModulePG__58                  |     2|
+|12    |        pg2          |ModulePG__57                  |     2|
+|13    |        pg3          |ModulePG__56                  |     2|
+|14    |      ual2           |CLA4bits__parameterized3__3   |    16|
+|15    |        pg0          |ModulePG__55                  |     2|
+|16    |        pg1          |ModulePG__54                  |     2|
+|17    |        pg2          |ModulePG__53                  |     2|
+|18    |        pg3          |ModulePG__52                  |     2|
+|19    |      ual3           |CLA4bits__parameterized5__3   |    16|
+|20    |        pg0          |ModulePG__51                  |     2|
+|21    |        pg1          |ModulePG__50                  |     2|
+|22    |        pg2          |ModulePG__49                  |     2|
+|23    |        pg3          |ModulePG__48                  |     2|
+|24    |    ual1             |CLA16bits__parameterized1__1  |    31|
+|25    |      ual0           |CLA4bits__2                   |    16|
+|26    |        pg0          |ModulePG__47                  |     2|
+|27    |        pg1          |ModulePG__46                  |     2|
+|28    |        pg2          |ModulePG__45                  |     2|
+|29    |        pg3          |ModulePG__44                  |     2|
+|30    |      ual1           |CLA4bits__parameterized1__2   |    13|
+|31    |        pg0          |ModulePG__43                  |     2|
+|32    |        pg1          |ModulePG__42                  |     2|
+|33    |        pg2          |ModulePG__41                  |     2|
+|34    |  \GEN[1].adderNth   |CLA32bits__2                  |    98|
+|35    |    ual0             |CLA16bits__2                  |    64|
+|36    |      ual0           |CLA4bits__5                   |    12|
+|37    |        pg0          |ModulePG__95                  |     1|
+|38    |        pg1          |ModulePG__94                  |     2|
+|39    |        pg2          |ModulePG__93                  |     2|
+|40    |        pg3          |ModulePG__92                  |     2|
+|41    |      ual1           |CLA4bits__parameterized1__5   |    16|
+|42    |        pg0          |ModulePG__91                  |     2|
+|43    |        pg1          |ModulePG__90                  |     2|
+|44    |        pg2          |ModulePG__89                  |     2|
+|45    |        pg3          |ModulePG__88                  |     2|
+|46    |      ual2           |CLA4bits__parameterized3__5   |    16|
+|47    |        pg0          |ModulePG__87                  |     2|
+|48    |        pg1          |ModulePG__86                  |     2|
+|49    |        pg2          |ModulePG__85                  |     2|
+|50    |        pg3          |ModulePG__84                  |     2|
+|51    |      ual3           |CLA4bits__parameterized5__5   |    16|
+|52    |        pg0          |ModulePG__83                  |     2|
+|53    |        pg1          |ModulePG__82                  |     2|
+|54    |        pg2          |ModulePG__81                  |     2|
+|55    |        pg3          |ModulePG__80                  |     2|
+|56    |    ual1             |CLA16bits__parameterized1__2  |    34|
+|57    |      ual0           |CLA4bits__4                   |    16|
+|58    |        pg0          |ModulePG__79                  |     2|
+|59    |        pg1          |ModulePG__78                  |     2|
+|60    |        pg2          |ModulePG__77                  |     2|
+|61    |        pg3          |ModulePG__76                  |     2|
+|62    |      ual1           |CLA4bits__parameterized1__4   |    16|
+|63    |        pg0          |ModulePG__75                  |     2|
+|64    |        pg1          |ModulePG__74                  |     2|
+|65    |        pg2          |ModulePG__73                  |     2|
+|66    |        pg3          |ModulePG__72                  |     2|
+|67    |  \GEN[2].adderNth   |CLA32bits__3                  |    98|
+|68    |    ual0             |CLA16bits__3                  |    64|
+|69    |      ual0           |CLA4bits__7                   |    12|
+|70    |        pg0          |ModulePG__127                 |     1|
+|71    |        pg1          |ModulePG__126                 |     2|
+|72    |        pg2          |ModulePG__125                 |     2|
+|73    |        pg3          |ModulePG__124                 |     2|
+|74    |      ual1           |CLA4bits__parameterized1__7   |    16|
+|75    |        pg0          |ModulePG__123                 |     2|
+|76    |        pg1          |ModulePG__122                 |     2|
+|77    |        pg2          |ModulePG__121                 |     2|
+|78    |        pg3          |ModulePG__120                 |     2|
+|79    |      ual2           |CLA4bits__parameterized3__7   |    16|
+|80    |        pg0          |ModulePG__119                 |     2|
+|81    |        pg1          |ModulePG__118                 |     2|
+|82    |        pg2          |ModulePG__117                 |     2|
+|83    |        pg3          |ModulePG__116                 |     2|
+|84    |      ual3           |CLA4bits__parameterized5__7   |    16|
+|85    |        pg0          |ModulePG__115                 |     2|
+|86    |        pg1          |ModulePG__114                 |     2|
+|87    |        pg2          |ModulePG__113                 |     2|
+|88    |        pg3          |ModulePG__112                 |     2|
+|89    |    ual1             |CLA16bits__parameterized1__3  |    34|
+|90    |      ual0           |CLA4bits__6                   |    16|
+|91    |        pg0          |ModulePG__111                 |     2|
+|92    |        pg1          |ModulePG__110                 |     2|
+|93    |        pg2          |ModulePG__109                 |     2|
+|94    |        pg3          |ModulePG__108                 |     2|
+|95    |      ual1           |CLA4bits__parameterized1__6   |    16|
+|96    |        pg0          |ModulePG__107                 |     2|
+|97    |        pg1          |ModulePG__106                 |     2|
+|98    |        pg2          |ModulePG__105                 |     2|
+|99    |        pg3          |ModulePG__104                 |     2|
+|100   |  \GEN[3].adderNth   |CLA32bits__4                  |    98|
+|101   |    ual0             |CLA16bits__4                  |    64|
+|102   |      ual0           |CLA4bits__9                   |    12|
+|103   |        pg0          |ModulePG__159                 |     1|
+|104   |        pg1          |ModulePG__158                 |     2|
+|105   |        pg2          |ModulePG__157                 |     2|
+|106   |        pg3          |ModulePG__156                 |     2|
+|107   |      ual1           |CLA4bits__parameterized1__9   |    16|
+|108   |        pg0          |ModulePG__155                 |     2|
+|109   |        pg1          |ModulePG__154                 |     2|
+|110   |        pg2          |ModulePG__153                 |     2|
+|111   |        pg3          |ModulePG__152                 |     2|
+|112   |      ual2           |CLA4bits__parameterized3__9   |    16|
+|113   |        pg0          |ModulePG__151                 |     2|
+|114   |        pg1          |ModulePG__150                 |     2|
+|115   |        pg2          |ModulePG__149                 |     2|
+|116   |        pg3          |ModulePG__148                 |     2|
+|117   |      ual3           |CLA4bits__parameterized5__9   |    16|
+|118   |        pg0          |ModulePG__147                 |     2|
+|119   |        pg1          |ModulePG__146                 |     2|
+|120   |        pg2          |ModulePG__145                 |     2|
+|121   |        pg3          |ModulePG__144                 |     2|
+|122   |    ual1             |CLA16bits__parameterized1__4  |    34|
+|123   |      ual0           |CLA4bits__8                   |    16|
+|124   |        pg0          |ModulePG__143                 |     2|
+|125   |        pg1          |ModulePG__142                 |     2|
+|126   |        pg2          |ModulePG__141                 |     2|
+|127   |        pg3          |ModulePG__140                 |     2|
+|128   |      ual1           |CLA4bits__parameterized1__8   |    16|
+|129   |        pg0          |ModulePG__139                 |     2|
+|130   |        pg1          |ModulePG__138                 |     2|
+|131   |        pg2          |ModulePG__137                 |     2|
+|132   |        pg3          |ModulePG__136                 |     2|
+|133   |  \GEN[4].adderNth   |CLA32bits__5                  |    98|
+|134   |    ual0             |CLA16bits__5                  |    64|
+|135   |      ual0           |CLA4bits__11                  |    12|
+|136   |        pg0          |ModulePG__191                 |     1|
+|137   |        pg1          |ModulePG__190                 |     2|
+|138   |        pg2          |ModulePG__189                 |     2|
+|139   |        pg3          |ModulePG__188                 |     2|
+|140   |      ual1           |CLA4bits__parameterized1__11  |    16|
+|141   |        pg0          |ModulePG__187                 |     2|
+|142   |        pg1          |ModulePG__186                 |     2|
+|143   |        pg2          |ModulePG__185                 |     2|
+|144   |        pg3          |ModulePG__184                 |     2|
+|145   |      ual2           |CLA4bits__parameterized3__11  |    16|
+|146   |        pg0          |ModulePG__183                 |     2|
+|147   |        pg1          |ModulePG__182                 |     2|
+|148   |        pg2          |ModulePG__181                 |     2|
+|149   |        pg3          |ModulePG__180                 |     2|
+|150   |      ual3           |CLA4bits__parameterized5__11  |    16|
+|151   |        pg0          |ModulePG__179                 |     2|
+|152   |        pg1          |ModulePG__178                 |     2|
+|153   |        pg2          |ModulePG__177                 |     2|
+|154   |        pg3          |ModulePG__176                 |     2|
+|155   |    ual1             |CLA16bits__parameterized1__5  |    34|
+|156   |      ual0           |CLA4bits__10                  |    16|
+|157   |        pg0          |ModulePG__175                 |     2|
+|158   |        pg1          |ModulePG__174                 |     2|
+|159   |        pg2          |ModulePG__173                 |     2|
+|160   |        pg3          |ModulePG__172                 |     2|
+|161   |      ual1           |CLA4bits__parameterized1__10  |    16|
+|162   |        pg0          |ModulePG__171                 |     2|
+|163   |        pg1          |ModulePG__170                 |     2|
+|164   |        pg2          |ModulePG__169                 |     2|
+|165   |        pg3          |ModulePG__168                 |     2|
+|166   |  \GEN[5].adderNth   |CLA32bits__6                  |    98|
+|167   |    ual0             |CLA16bits__6                  |    64|
+|168   |      ual0           |CLA4bits__13                  |    12|
+|169   |        pg0          |ModulePG__223                 |     1|
+|170   |        pg1          |ModulePG__222                 |     2|
+|171   |        pg2          |ModulePG__221                 |     2|
+|172   |        pg3          |ModulePG__220                 |     2|
+|173   |      ual1           |CLA4bits__parameterized1__13  |    16|
+|174   |        pg0          |ModulePG__219                 |     2|
+|175   |        pg1          |ModulePG__218                 |     2|
+|176   |        pg2          |ModulePG__217                 |     2|
+|177   |        pg3          |ModulePG__216                 |     2|
+|178   |      ual2           |CLA4bits__parameterized3__13  |    16|
+|179   |        pg0          |ModulePG__215                 |     2|
+|180   |        pg1          |ModulePG__214                 |     2|
+|181   |        pg2          |ModulePG__213                 |     2|
+|182   |        pg3          |ModulePG__212                 |     2|
+|183   |      ual3           |CLA4bits__parameterized5__13  |    16|
+|184   |        pg0          |ModulePG__211                 |     2|
+|185   |        pg1          |ModulePG__210                 |     2|
+|186   |        pg2          |ModulePG__209                 |     2|
+|187   |        pg3          |ModulePG__208                 |     2|
+|188   |    ual1             |CLA16bits__parameterized1__6  |    34|
+|189   |      ual0           |CLA4bits__12                  |    16|
+|190   |        pg0          |ModulePG__207                 |     2|
+|191   |        pg1          |ModulePG__206                 |     2|
+|192   |        pg2          |ModulePG__205                 |     2|
+|193   |        pg3          |ModulePG__204                 |     2|
+|194   |      ual1           |CLA4bits__parameterized1__12  |    16|
+|195   |        pg0          |ModulePG__203                 |     2|
+|196   |        pg1          |ModulePG__202                 |     2|
+|197   |        pg2          |ModulePG__201                 |     2|
+|198   |        pg3          |ModulePG__200                 |     2|
+|199   |  \GEN[6].adderNth   |CLA32bits__7                  |    98|
+|200   |    ual0             |CLA16bits__7                  |    64|
+|201   |      ual0           |CLA4bits__15                  |    12|
+|202   |        pg0          |ModulePG__255                 |     1|
+|203   |        pg1          |ModulePG__254                 |     2|
+|204   |        pg2          |ModulePG__253                 |     2|
+|205   |        pg3          |ModulePG__252                 |     2|
+|206   |      ual1           |CLA4bits__parameterized1__15  |    16|
+|207   |        pg0          |ModulePG__251                 |     2|
+|208   |        pg1          |ModulePG__250                 |     2|
+|209   |        pg2          |ModulePG__249                 |     2|
+|210   |        pg3          |ModulePG__248                 |     2|
+|211   |      ual2           |CLA4bits__parameterized3__15  |    16|
+|212   |        pg0          |ModulePG__247                 |     2|
+|213   |        pg1          |ModulePG__246                 |     2|
+|214   |        pg2          |ModulePG__245                 |     2|
+|215   |        pg3          |ModulePG__244                 |     2|
+|216   |      ual3           |CLA4bits__parameterized5__15  |    16|
+|217   |        pg0          |ModulePG__243                 |     2|
+|218   |        pg1          |ModulePG__242                 |     2|
+|219   |        pg2          |ModulePG__241                 |     2|
+|220   |        pg3          |ModulePG__240                 |     2|
+|221   |    ual1             |CLA16bits__parameterized1__7  |    34|
+|222   |      ual0           |CLA4bits__14                  |    16|
+|223   |        pg0          |ModulePG__239                 |     2|
+|224   |        pg1          |ModulePG__238                 |     2|
+|225   |        pg2          |ModulePG__237                 |     2|
+|226   |        pg3          |ModulePG__236                 |     2|
+|227   |      ual1           |CLA4bits__parameterized1__14  |    16|
+|228   |        pg0          |ModulePG__235                 |     2|
+|229   |        pg1          |ModulePG__234                 |     2|
+|230   |        pg2          |ModulePG__233                 |     2|
+|231   |        pg3          |ModulePG__232                 |     2|
+|232   |  \GEN[7].adderNth   |CLA32bits__8                  |    98|
+|233   |    ual0             |CLA16bits__8                  |    64|
+|234   |      ual0           |CLA4bits__17                  |    12|
+|235   |        pg0          |ModulePG__287                 |     1|
+|236   |        pg1          |ModulePG__286                 |     2|
+|237   |        pg2          |ModulePG__285                 |     2|
+|238   |        pg3          |ModulePG__284                 |     2|
+|239   |      ual1           |CLA4bits__parameterized1__17  |    16|
+|240   |        pg0          |ModulePG__283                 |     2|
+|241   |        pg1          |ModulePG__282                 |     2|
+|242   |        pg2          |ModulePG__281                 |     2|
+|243   |        pg3          |ModulePG__280                 |     2|
+|244   |      ual2           |CLA4bits__parameterized3__17  |    16|
+|245   |        pg0          |ModulePG__279                 |     2|
+|246   |        pg1          |ModulePG__278                 |     2|
+|247   |        pg2          |ModulePG__277                 |     2|
+|248   |        pg3          |ModulePG__276                 |     2|
+|249   |      ual3           |CLA4bits__parameterized5__17  |    16|
+|250   |        pg0          |ModulePG__275                 |     2|
+|251   |        pg1          |ModulePG__274                 |     2|
+|252   |        pg2          |ModulePG__273                 |     2|
+|253   |        pg3          |ModulePG__272                 |     2|
+|254   |    ual1             |CLA16bits__parameterized1__8  |    34|
+|255   |      ual0           |CLA4bits__16                  |    16|
+|256   |        pg0          |ModulePG__271                 |     2|
+|257   |        pg1          |ModulePG__270                 |     2|
+|258   |        pg2          |ModulePG__269                 |     2|
+|259   |        pg3          |ModulePG__268                 |     2|
+|260   |      ual1           |CLA4bits__parameterized1__16  |    16|
+|261   |        pg0          |ModulePG__267                 |     2|
+|262   |        pg1          |ModulePG__266                 |     2|
+|263   |        pg2          |ModulePG__265                 |     2|
+|264   |        pg3          |ModulePG__264                 |     2|
+|265   |  \GEN[8].adderNth   |CLA32bits__9                  |    98|
+|266   |    ual0             |CLA16bits__9                  |    64|
+|267   |      ual0           |CLA4bits__19                  |    12|
+|268   |        pg0          |ModulePG__319                 |     1|
+|269   |        pg1          |ModulePG__318                 |     2|
+|270   |        pg2          |ModulePG__317                 |     2|
+|271   |        pg3          |ModulePG__316                 |     2|
+|272   |      ual1           |CLA4bits__parameterized1__19  |    16|
+|273   |        pg0          |ModulePG__315                 |     2|
+|274   |        pg1          |ModulePG__314                 |     2|
+|275   |        pg2          |ModulePG__313                 |     2|
+|276   |        pg3          |ModulePG__312                 |     2|
+|277   |      ual2           |CLA4bits__parameterized3__19  |    16|
+|278   |        pg0          |ModulePG__311                 |     2|
+|279   |        pg1          |ModulePG__310                 |     2|
+|280   |        pg2          |ModulePG__309                 |     2|
+|281   |        pg3          |ModulePG__308                 |     2|
+|282   |      ual3           |CLA4bits__parameterized5__19  |    16|
+|283   |        pg0          |ModulePG__307                 |     2|
+|284   |        pg1          |ModulePG__306                 |     2|
+|285   |        pg2          |ModulePG__305                 |     2|
+|286   |        pg3          |ModulePG__304                 |     2|
+|287   |    ual1             |CLA16bits__parameterized1__9  |    34|
+|288   |      ual0           |CLA4bits__18                  |    16|
+|289   |        pg0          |ModulePG__303                 |     2|
+|290   |        pg1          |ModulePG__302                 |     2|
+|291   |        pg2          |ModulePG__301                 |     2|
+|292   |        pg3          |ModulePG__300                 |     2|
+|293   |      ual1           |CLA4bits__parameterized1__18  |    16|
+|294   |        pg0          |ModulePG__299                 |     2|
+|295   |        pg1          |ModulePG__298                 |     2|
+|296   |        pg2          |ModulePG__297                 |     2|
+|297   |        pg3          |ModulePG__296                 |     2|
+|298   |  \GEN[9].adderNth   |CLA32bits__10                 |    98|
+|299   |    ual0             |CLA16bits__10                 |    64|
+|300   |      ual0           |CLA4bits__21                  |    12|
+|301   |        pg0          |ModulePG__351                 |     1|
+|302   |        pg1          |ModulePG__350                 |     2|
+|303   |        pg2          |ModulePG__349                 |     2|
+|304   |        pg3          |ModulePG__348                 |     2|
+|305   |      ual1           |CLA4bits__parameterized1__21  |    16|
+|306   |        pg0          |ModulePG__347                 |     2|
+|307   |        pg1          |ModulePG__346                 |     2|
+|308   |        pg2          |ModulePG__345                 |     2|
+|309   |        pg3          |ModulePG__344                 |     2|
+|310   |      ual2           |CLA4bits__parameterized3__21  |    16|
+|311   |        pg0          |ModulePG__343                 |     2|
+|312   |        pg1          |ModulePG__342                 |     2|
+|313   |        pg2          |ModulePG__341                 |     2|
+|314   |        pg3          |ModulePG__340                 |     2|
+|315   |      ual3           |CLA4bits__parameterized5__21  |    16|
+|316   |        pg0          |ModulePG__339                 |     2|
+|317   |        pg1          |ModulePG__338                 |     2|
+|318   |        pg2          |ModulePG__337                 |     2|
+|319   |        pg3          |ModulePG__336                 |     2|
+|320   |    ual1             |CLA16bits__parameterized1__10 |    34|
+|321   |      ual0           |CLA4bits__20                  |    16|
+|322   |        pg0          |ModulePG__335                 |     2|
+|323   |        pg1          |ModulePG__334                 |     2|
+|324   |        pg2          |ModulePG__333                 |     2|
+|325   |        pg3          |ModulePG__332                 |     2|
+|326   |      ual1           |CLA4bits__parameterized1__20  |    16|
+|327   |        pg0          |ModulePG__331                 |     2|
+|328   |        pg1          |ModulePG__330                 |     2|
+|329   |        pg2          |ModulePG__329                 |     2|
+|330   |        pg3          |ModulePG__328                 |     2|
+|331   |  \GEN[10].adderNth  |CLA32bits__11                 |    98|
+|332   |    ual0             |CLA16bits__11                 |    64|
+|333   |      ual0           |CLA4bits__23                  |    12|
+|334   |        pg0          |ModulePG__383                 |     1|
+|335   |        pg1          |ModulePG__382                 |     2|
+|336   |        pg2          |ModulePG__381                 |     2|
+|337   |        pg3          |ModulePG__380                 |     2|
+|338   |      ual1           |CLA4bits__parameterized1__23  |    16|
+|339   |        pg0          |ModulePG__379                 |     2|
+|340   |        pg1          |ModulePG__378                 |     2|
+|341   |        pg2          |ModulePG__377                 |     2|
+|342   |        pg3          |ModulePG__376                 |     2|
+|343   |      ual2           |CLA4bits__parameterized3__23  |    16|
+|344   |        pg0          |ModulePG__375                 |     2|
+|345   |        pg1          |ModulePG__374                 |     2|
+|346   |        pg2          |ModulePG__373                 |     2|
+|347   |        pg3          |ModulePG__372                 |     2|
+|348   |      ual3           |CLA4bits__parameterized5__23  |    16|
+|349   |        pg0          |ModulePG__371                 |     2|
+|350   |        pg1          |ModulePG__370                 |     2|
+|351   |        pg2          |ModulePG__369                 |     2|
+|352   |        pg3          |ModulePG__368                 |     2|
+|353   |    ual1             |CLA16bits__parameterized1__11 |    34|
+|354   |      ual0           |CLA4bits__22                  |    16|
+|355   |        pg0          |ModulePG__367                 |     2|
+|356   |        pg1          |ModulePG__366                 |     2|
+|357   |        pg2          |ModulePG__365                 |     2|
+|358   |        pg3          |ModulePG__364                 |     2|
+|359   |      ual1           |CLA4bits__parameterized1__22  |    16|
+|360   |        pg0          |ModulePG__363                 |     2|
+|361   |        pg1          |ModulePG__362                 |     2|
+|362   |        pg2          |ModulePG__361                 |     2|
+|363   |        pg3          |ModulePG__360                 |     2|
+|364   |  \GEN[11].adderNth  |CLA32bits__12                 |    98|
+|365   |    ual0             |CLA16bits__12                 |    64|
+|366   |      ual0           |CLA4bits__25                  |    12|
+|367   |        pg0          |ModulePG__415                 |     1|
+|368   |        pg1          |ModulePG__414                 |     2|
+|369   |        pg2          |ModulePG__413                 |     2|
+|370   |        pg3          |ModulePG__412                 |     2|
+|371   |      ual1           |CLA4bits__parameterized1__25  |    16|
+|372   |        pg0          |ModulePG__411                 |     2|
+|373   |        pg1          |ModulePG__410                 |     2|
+|374   |        pg2          |ModulePG__409                 |     2|
+|375   |        pg3          |ModulePG__408                 |     2|
+|376   |      ual2           |CLA4bits__parameterized3__25  |    16|
+|377   |        pg0          |ModulePG__407                 |     2|
+|378   |        pg1          |ModulePG__406                 |     2|
+|379   |        pg2          |ModulePG__405                 |     2|
+|380   |        pg3          |ModulePG__404                 |     2|
+|381   |      ual3           |CLA4bits__parameterized5__25  |    16|
+|382   |        pg0          |ModulePG__403                 |     2|
+|383   |        pg1          |ModulePG__402                 |     2|
+|384   |        pg2          |ModulePG__401                 |     2|
+|385   |        pg3          |ModulePG__400                 |     2|
+|386   |    ual1             |CLA16bits__parameterized1__12 |    34|
+|387   |      ual0           |CLA4bits__24                  |    16|
+|388   |        pg0          |ModulePG__399                 |     2|
+|389   |        pg1          |ModulePG__398                 |     2|
+|390   |        pg2          |ModulePG__397                 |     2|
+|391   |        pg3          |ModulePG__396                 |     2|
+|392   |      ual1           |CLA4bits__parameterized1__24  |    16|
+|393   |        pg0          |ModulePG__395                 |     2|
+|394   |        pg1          |ModulePG__394                 |     2|
+|395   |        pg2          |ModulePG__393                 |     2|
+|396   |        pg3          |ModulePG__392                 |     2|
+|397   |  \GEN[12].adderNth  |CLA32bits__13                 |    98|
+|398   |    ual0             |CLA16bits__13                 |    64|
+|399   |      ual0           |CLA4bits__27                  |    12|
+|400   |        pg0          |ModulePG__447                 |     1|
+|401   |        pg1          |ModulePG__446                 |     2|
+|402   |        pg2          |ModulePG__445                 |     2|
+|403   |        pg3          |ModulePG__444                 |     2|
+|404   |      ual1           |CLA4bits__parameterized1__27  |    16|
+|405   |        pg0          |ModulePG__443                 |     2|
+|406   |        pg1          |ModulePG__442                 |     2|
+|407   |        pg2          |ModulePG__441                 |     2|
+|408   |        pg3          |ModulePG__440                 |     2|
+|409   |      ual2           |CLA4bits__parameterized3__27  |    16|
+|410   |        pg0          |ModulePG__439                 |     2|
+|411   |        pg1          |ModulePG__438                 |     2|
+|412   |        pg2          |ModulePG__437                 |     2|
+|413   |        pg3          |ModulePG__436                 |     2|
+|414   |      ual3           |CLA4bits__parameterized5__27  |    16|
+|415   |        pg0          |ModulePG__435                 |     2|
+|416   |        pg1          |ModulePG__434                 |     2|
+|417   |        pg2          |ModulePG__433                 |     2|
+|418   |        pg3          |ModulePG__432                 |     2|
+|419   |    ual1             |CLA16bits__parameterized1__13 |    34|
+|420   |      ual0           |CLA4bits__26                  |    16|
+|421   |        pg0          |ModulePG__431                 |     2|
+|422   |        pg1          |ModulePG__430                 |     2|
+|423   |        pg2          |ModulePG__429                 |     2|
+|424   |        pg3          |ModulePG__428                 |     2|
+|425   |      ual1           |CLA4bits__parameterized1__26  |    16|
+|426   |        pg0          |ModulePG__427                 |     2|
+|427   |        pg1          |ModulePG__426                 |     2|
+|428   |        pg2          |ModulePG__425                 |     2|
+|429   |        pg3          |ModulePG__424                 |     2|
+|430   |  \GEN[13].adderNth  |CLA32bits__14                 |    98|
+|431   |    ual0             |CLA16bits__14                 |    64|
+|432   |      ual0           |CLA4bits__29                  |    12|
+|433   |        pg0          |ModulePG__479                 |     1|
+|434   |        pg1          |ModulePG__478                 |     2|
+|435   |        pg2          |ModulePG__477                 |     2|
+|436   |        pg3          |ModulePG__476                 |     2|
+|437   |      ual1           |CLA4bits__parameterized1__29  |    16|
+|438   |        pg0          |ModulePG__475                 |     2|
+|439   |        pg1          |ModulePG__474                 |     2|
+|440   |        pg2          |ModulePG__473                 |     2|
+|441   |        pg3          |ModulePG__472                 |     2|
+|442   |      ual2           |CLA4bits__parameterized3__29  |    16|
+|443   |        pg0          |ModulePG__471                 |     2|
+|444   |        pg1          |ModulePG__470                 |     2|
+|445   |        pg2          |ModulePG__469                 |     2|
+|446   |        pg3          |ModulePG__468                 |     2|
+|447   |      ual3           |CLA4bits__parameterized5__29  |    16|
+|448   |        pg0          |ModulePG__467                 |     2|
+|449   |        pg1          |ModulePG__466                 |     2|
+|450   |        pg2          |ModulePG__465                 |     2|
+|451   |        pg3          |ModulePG__464                 |     2|
+|452   |    ual1             |CLA16bits__parameterized1__14 |    34|
+|453   |      ual0           |CLA4bits__28                  |    16|
+|454   |        pg0          |ModulePG__463                 |     2|
+|455   |        pg1          |ModulePG__462                 |     2|
+|456   |        pg2          |ModulePG__461                 |     2|
+|457   |        pg3          |ModulePG__460                 |     2|
+|458   |      ual1           |CLA4bits__parameterized1__28  |    16|
+|459   |        pg0          |ModulePG__459                 |     2|
+|460   |        pg1          |ModulePG__458                 |     2|
+|461   |        pg2          |ModulePG__457                 |     2|
+|462   |        pg3          |ModulePG__456                 |     2|
+|463   |  \GEN[14].adderNth  |CLA32bits__15                 |    98|
+|464   |    ual0             |CLA16bits__15                 |    64|
+|465   |      ual0           |CLA4bits__31                  |    12|
+|466   |        pg0          |ModulePG__511                 |     1|
+|467   |        pg1          |ModulePG__510                 |     2|
+|468   |        pg2          |ModulePG__509                 |     2|
+|469   |        pg3          |ModulePG__508                 |     2|
+|470   |      ual1           |CLA4bits__parameterized1__31  |    16|
+|471   |        pg0          |ModulePG__507                 |     2|
+|472   |        pg1          |ModulePG__506                 |     2|
+|473   |        pg2          |ModulePG__505                 |     2|
+|474   |        pg3          |ModulePG__504                 |     2|
+|475   |      ual2           |CLA4bits__parameterized3__31  |    16|
+|476   |        pg0          |ModulePG__503                 |     2|
+|477   |        pg1          |ModulePG__502                 |     2|
+|478   |        pg2          |ModulePG__501                 |     2|
+|479   |        pg3          |ModulePG__500                 |     2|
+|480   |      ual3           |CLA4bits__parameterized5__31  |    16|
+|481   |        pg0          |ModulePG__499                 |     2|
+|482   |        pg1          |ModulePG__498                 |     2|
+|483   |        pg2          |ModulePG__497                 |     2|
+|484   |        pg3          |ModulePG__496                 |     2|
+|485   |    ual1             |CLA16bits__parameterized1__15 |    34|
+|486   |      ual0           |CLA4bits__30                  |    16|
+|487   |        pg0          |ModulePG__495                 |     2|
+|488   |        pg1          |ModulePG__494                 |     2|
+|489   |        pg2          |ModulePG__493                 |     2|
+|490   |        pg3          |ModulePG__492                 |     2|
+|491   |      ual1           |CLA4bits__parameterized1__30  |    16|
+|492   |        pg0          |ModulePG__491                 |     2|
+|493   |        pg1          |ModulePG__490                 |     2|
+|494   |        pg2          |ModulePG__489                 |     2|
+|495   |        pg3          |ModulePG__488                 |     2|
+|496   |  \GEN[15].adderNth  |CLA32bits__16                 |    98|
+|497   |    ual0             |CLA16bits__16                 |    64|
+|498   |      ual0           |CLA4bits__33                  |    12|
+|499   |        pg0          |ModulePG__543                 |     1|
+|500   |        pg1          |ModulePG__542                 |     2|
+|501   |        pg2          |ModulePG__541                 |     2|
+|502   |        pg3          |ModulePG__540                 |     2|
+|503   |      ual1           |CLA4bits__parameterized1__33  |    16|
+|504   |        pg0          |ModulePG__539                 |     2|
+|505   |        pg1          |ModulePG__538                 |     2|
+|506   |        pg2          |ModulePG__537                 |     2|
+|507   |        pg3          |ModulePG__536                 |     2|
+|508   |      ual2           |CLA4bits__parameterized3__33  |    16|
+|509   |        pg0          |ModulePG__535                 |     2|
+|510   |        pg1          |ModulePG__534                 |     2|
+|511   |        pg2          |ModulePG__533                 |     2|
+|512   |        pg3          |ModulePG__532                 |     2|
+|513   |      ual3           |CLA4bits__parameterized5__33  |    16|
+|514   |        pg0          |ModulePG__531                 |     2|
+|515   |        pg1          |ModulePG__530                 |     2|
+|516   |        pg2          |ModulePG__529                 |     2|
+|517   |        pg3          |ModulePG__528                 |     2|
+|518   |    ual1             |CLA16bits__parameterized1__16 |    34|
+|519   |      ual0           |CLA4bits__32                  |    16|
+|520   |        pg0          |ModulePG__527                 |     2|
+|521   |        pg1          |ModulePG__526                 |     2|
+|522   |        pg2          |ModulePG__525                 |     2|
+|523   |        pg3          |ModulePG__524                 |     2|
+|524   |      ual1           |CLA4bits__parameterized1__32  |    16|
+|525   |        pg0          |ModulePG__523                 |     2|
+|526   |        pg1          |ModulePG__522                 |     2|
+|527   |        pg2          |ModulePG__521                 |     2|
+|528   |        pg3          |ModulePG__520                 |     2|
+|529   |  \GEN[16].adderNth  |CLA32bits__17                 |    98|
+|530   |    ual0             |CLA16bits__17                 |    64|
+|531   |      ual0           |CLA4bits__35                  |    12|
+|532   |        pg0          |ModulePG__575                 |     1|
+|533   |        pg1          |ModulePG__574                 |     2|
+|534   |        pg2          |ModulePG__573                 |     2|
+|535   |        pg3          |ModulePG__572                 |     2|
+|536   |      ual1           |CLA4bits__parameterized1__35  |    16|
+|537   |        pg0          |ModulePG__571                 |     2|
+|538   |        pg1          |ModulePG__570                 |     2|
+|539   |        pg2          |ModulePG__569                 |     2|
+|540   |        pg3          |ModulePG__568                 |     2|
+|541   |      ual2           |CLA4bits__parameterized3__35  |    16|
+|542   |        pg0          |ModulePG__567                 |     2|
+|543   |        pg1          |ModulePG__566                 |     2|
+|544   |        pg2          |ModulePG__565                 |     2|
+|545   |        pg3          |ModulePG__564                 |     2|
+|546   |      ual3           |CLA4bits__parameterized5__35  |    16|
+|547   |        pg0          |ModulePG__563                 |     2|
+|548   |        pg1          |ModulePG__562                 |     2|
+|549   |        pg2          |ModulePG__561                 |     2|
+|550   |        pg3          |ModulePG__560                 |     2|
+|551   |    ual1             |CLA16bits__parameterized1__17 |    34|
+|552   |      ual0           |CLA4bits__34                  |    16|
+|553   |        pg0          |ModulePG__559                 |     2|
+|554   |        pg1          |ModulePG__558                 |     2|
+|555   |        pg2          |ModulePG__557                 |     2|
+|556   |        pg3          |ModulePG__556                 |     2|
+|557   |      ual1           |CLA4bits__parameterized1__34  |    16|
+|558   |        pg0          |ModulePG__555                 |     2|
+|559   |        pg1          |ModulePG__554                 |     2|
+|560   |        pg2          |ModulePG__553                 |     2|
+|561   |        pg3          |ModulePG__552                 |     2|
+|562   |  \GEN[17].adderNth  |CLA32bits__18                 |    98|
+|563   |    ual0             |CLA16bits__18                 |    64|
+|564   |      ual0           |CLA4bits__37                  |    12|
+|565   |        pg0          |ModulePG__607                 |     1|
+|566   |        pg1          |ModulePG__606                 |     2|
+|567   |        pg2          |ModulePG__605                 |     2|
+|568   |        pg3          |ModulePG__604                 |     2|
+|569   |      ual1           |CLA4bits__parameterized1__37  |    16|
+|570   |        pg0          |ModulePG__603                 |     2|
+|571   |        pg1          |ModulePG__602                 |     2|
+|572   |        pg2          |ModulePG__601                 |     2|
+|573   |        pg3          |ModulePG__600                 |     2|
+|574   |      ual2           |CLA4bits__parameterized3__37  |    16|
+|575   |        pg0          |ModulePG__599                 |     2|
+|576   |        pg1          |ModulePG__598                 |     2|
+|577   |        pg2          |ModulePG__597                 |     2|
+|578   |        pg3          |ModulePG__596                 |     2|
+|579   |      ual3           |CLA4bits__parameterized5__37  |    16|
+|580   |        pg0          |ModulePG__595                 |     2|
+|581   |        pg1          |ModulePG__594                 |     2|
+|582   |        pg2          |ModulePG__593                 |     2|
+|583   |        pg3          |ModulePG__592                 |     2|
+|584   |    ual1             |CLA16bits__parameterized1__18 |    34|
+|585   |      ual0           |CLA4bits__36                  |    16|
+|586   |        pg0          |ModulePG__591                 |     2|
+|587   |        pg1          |ModulePG__590                 |     2|
+|588   |        pg2          |ModulePG__589                 |     2|
+|589   |        pg3          |ModulePG__588                 |     2|
+|590   |      ual1           |CLA4bits__parameterized1__36  |    16|
+|591   |        pg0          |ModulePG__587                 |     2|
+|592   |        pg1          |ModulePG__586                 |     2|
+|593   |        pg2          |ModulePG__585                 |     2|
+|594   |        pg3          |ModulePG__584                 |     2|
+|595   |  \GEN[18].adderNth  |CLA32bits__19                 |    98|
+|596   |    ual0             |CLA16bits__19                 |    64|
+|597   |      ual0           |CLA4bits__39                  |    12|
+|598   |        pg0          |ModulePG__639                 |     1|
+|599   |        pg1          |ModulePG__638                 |     2|
+|600   |        pg2          |ModulePG__637                 |     2|
+|601   |        pg3          |ModulePG__636                 |     2|
+|602   |      ual1           |CLA4bits__parameterized1__39  |    16|
+|603   |        pg0          |ModulePG__635                 |     2|
+|604   |        pg1          |ModulePG__634                 |     2|
+|605   |        pg2          |ModulePG__633                 |     2|
+|606   |        pg3          |ModulePG__632                 |     2|
+|607   |      ual2           |CLA4bits__parameterized3__39  |    16|
+|608   |        pg0          |ModulePG__631                 |     2|
+|609   |        pg1          |ModulePG__630                 |     2|
+|610   |        pg2          |ModulePG__629                 |     2|
+|611   |        pg3          |ModulePG__628                 |     2|
+|612   |      ual3           |CLA4bits__parameterized5__39  |    16|
+|613   |        pg0          |ModulePG__627                 |     2|
+|614   |        pg1          |ModulePG__626                 |     2|
+|615   |        pg2          |ModulePG__625                 |     2|
+|616   |        pg3          |ModulePG__624                 |     2|
+|617   |    ual1             |CLA16bits__parameterized1__19 |    34|
+|618   |      ual0           |CLA4bits__38                  |    16|
+|619   |        pg0          |ModulePG__623                 |     2|
+|620   |        pg1          |ModulePG__622                 |     2|
+|621   |        pg2          |ModulePG__621                 |     2|
+|622   |        pg3          |ModulePG__620                 |     2|
+|623   |      ual1           |CLA4bits__parameterized1__38  |    16|
+|624   |        pg0          |ModulePG__619                 |     2|
+|625   |        pg1          |ModulePG__618                 |     2|
+|626   |        pg2          |ModulePG__617                 |     2|
+|627   |        pg3          |ModulePG__616                 |     2|
+|628   |  \GEN[19].adderNth  |CLA32bits__20                 |    98|
+|629   |    ual0             |CLA16bits__20                 |    64|
+|630   |      ual0           |CLA4bits__41                  |    12|
+|631   |        pg0          |ModulePG__671                 |     1|
+|632   |        pg1          |ModulePG__670                 |     2|
+|633   |        pg2          |ModulePG__669                 |     2|
+|634   |        pg3          |ModulePG__668                 |     2|
+|635   |      ual1           |CLA4bits__parameterized1__41  |    16|
+|636   |        pg0          |ModulePG__667                 |     2|
+|637   |        pg1          |ModulePG__666                 |     2|
+|638   |        pg2          |ModulePG__665                 |     2|
+|639   |        pg3          |ModulePG__664                 |     2|
+|640   |      ual2           |CLA4bits__parameterized3__41  |    16|
+|641   |        pg0          |ModulePG__663                 |     2|
+|642   |        pg1          |ModulePG__662                 |     2|
+|643   |        pg2          |ModulePG__661                 |     2|
+|644   |        pg3          |ModulePG__660                 |     2|
+|645   |      ual3           |CLA4bits__parameterized5__41  |    16|
+|646   |        pg0          |ModulePG__659                 |     2|
+|647   |        pg1          |ModulePG__658                 |     2|
+|648   |        pg2          |ModulePG__657                 |     2|
+|649   |        pg3          |ModulePG__656                 |     2|
+|650   |    ual1             |CLA16bits__parameterized1__20 |    34|
+|651   |      ual0           |CLA4bits__40                  |    16|
+|652   |        pg0          |ModulePG__655                 |     2|
+|653   |        pg1          |ModulePG__654                 |     2|
+|654   |        pg2          |ModulePG__653                 |     2|
+|655   |        pg3          |ModulePG__652                 |     2|
+|656   |      ual1           |CLA4bits__parameterized1__40  |    16|
+|657   |        pg0          |ModulePG__651                 |     2|
+|658   |        pg1          |ModulePG__650                 |     2|
+|659   |        pg2          |ModulePG__649                 |     2|
+|660   |        pg3          |ModulePG__648                 |     2|
+|661   |  \GEN[20].adderNth  |CLA32bits__21                 |    98|
+|662   |    ual0             |CLA16bits__21                 |    64|
+|663   |      ual0           |CLA4bits__43                  |    12|
+|664   |        pg0          |ModulePG__703                 |     1|
+|665   |        pg1          |ModulePG__702                 |     2|
+|666   |        pg2          |ModulePG__701                 |     2|
+|667   |        pg3          |ModulePG__700                 |     2|
+|668   |      ual1           |CLA4bits__parameterized1__43  |    16|
+|669   |        pg0          |ModulePG__699                 |     2|
+|670   |        pg1          |ModulePG__698                 |     2|
+|671   |        pg2          |ModulePG__697                 |     2|
+|672   |        pg3          |ModulePG__696                 |     2|
+|673   |      ual2           |CLA4bits__parameterized3__43  |    16|
+|674   |        pg0          |ModulePG__695                 |     2|
+|675   |        pg1          |ModulePG__694                 |     2|
+|676   |        pg2          |ModulePG__693                 |     2|
+|677   |        pg3          |ModulePG__692                 |     2|
+|678   |      ual3           |CLA4bits__parameterized5__43  |    16|
+|679   |        pg0          |ModulePG__691                 |     2|
+|680   |        pg1          |ModulePG__690                 |     2|
+|681   |        pg2          |ModulePG__689                 |     2|
+|682   |        pg3          |ModulePG__688                 |     2|
+|683   |    ual1             |CLA16bits__parameterized1__21 |    34|
+|684   |      ual0           |CLA4bits__42                  |    16|
+|685   |        pg0          |ModulePG__687                 |     2|
+|686   |        pg1          |ModulePG__686                 |     2|
+|687   |        pg2          |ModulePG__685                 |     2|
+|688   |        pg3          |ModulePG__684                 |     2|
+|689   |      ual1           |CLA4bits__parameterized1__42  |    16|
+|690   |        pg0          |ModulePG__683                 |     2|
+|691   |        pg1          |ModulePG__682                 |     2|
+|692   |        pg2          |ModulePG__681                 |     2|
+|693   |        pg3          |ModulePG__680                 |     2|
+|694   |  \GEN[21].adderNth  |CLA32bits__22                 |    98|
+|695   |    ual0             |CLA16bits__22                 |    64|
+|696   |      ual0           |CLA4bits__45                  |    12|
+|697   |        pg0          |ModulePG__735                 |     1|
+|698   |        pg1          |ModulePG__734                 |     2|
+|699   |        pg2          |ModulePG__733                 |     2|
+|700   |        pg3          |ModulePG__732                 |     2|
+|701   |      ual1           |CLA4bits__parameterized1__45  |    16|
+|702   |        pg0          |ModulePG__731                 |     2|
+|703   |        pg1          |ModulePG__730                 |     2|
+|704   |        pg2          |ModulePG__729                 |     2|
+|705   |        pg3          |ModulePG__728                 |     2|
+|706   |      ual2           |CLA4bits__parameterized3__45  |    16|
+|707   |        pg0          |ModulePG__727                 |     2|
+|708   |        pg1          |ModulePG__726                 |     2|
+|709   |        pg2          |ModulePG__725                 |     2|
+|710   |        pg3          |ModulePG__724                 |     2|
+|711   |      ual3           |CLA4bits__parameterized5__45  |    16|
+|712   |        pg0          |ModulePG__723                 |     2|
+|713   |        pg1          |ModulePG__722                 |     2|
+|714   |        pg2          |ModulePG__721                 |     2|
+|715   |        pg3          |ModulePG__720                 |     2|
+|716   |    ual1             |CLA16bits__parameterized1__22 |    34|
+|717   |      ual0           |CLA4bits__44                  |    16|
+|718   |        pg0          |ModulePG__719                 |     2|
+|719   |        pg1          |ModulePG__718                 |     2|
+|720   |        pg2          |ModulePG__717                 |     2|
+|721   |        pg3          |ModulePG__716                 |     2|
+|722   |      ual1           |CLA4bits__parameterized1__44  |    16|
+|723   |        pg0          |ModulePG__715                 |     2|
+|724   |        pg1          |ModulePG__714                 |     2|
+|725   |        pg2          |ModulePG__713                 |     2|
+|726   |        pg3          |ModulePG__712                 |     2|
+|727   |  \GEN[22].adderNth  |CLA32bits                     |    98|
+|728   |    ual0             |CLA16bits                     |    65|
+|729   |      ual0           |CLA4bits__1                   |    13|
+|730   |        pg0          |ModulePG__31                  |     2|
+|731   |        pg1          |ModulePG__30                  |     2|
+|732   |        pg2          |ModulePG__29                  |     2|
+|733   |        pg3          |ModulePG__28                  |     2|
+|734   |      ual1           |CLA4bits__parameterized1__1   |    16|
+|735   |        pg0          |ModulePG__27                  |     2|
+|736   |        pg1          |ModulePG__26                  |     2|
+|737   |        pg2          |ModulePG__25                  |     2|
+|738   |        pg3          |ModulePG__24                  |     2|
+|739   |      ual2           |CLA4bits__parameterized3__1   |    16|
+|740   |        pg0          |ModulePG__23                  |     2|
+|741   |        pg1          |ModulePG__22                  |     2|
+|742   |        pg2          |ModulePG__21                  |     2|
+|743   |        pg3          |ModulePG__20                  |     2|
+|744   |      ual3           |CLA4bits__parameterized5__1   |    16|
+|745   |        pg0          |ModulePG__19                  |     2|
+|746   |        pg1          |ModulePG__18                  |     2|
+|747   |        pg2          |ModulePG__17                  |     2|
+|748   |        pg3          |ModulePG__16                  |     2|
+|749   |    ual1             |CLA16bits__parameterized1     |    33|
+|750   |      ual0           |CLA4bits                      |    16|
+|751   |        pg0          |ModulePG__1                   |     2|
+|752   |        pg1          |ModulePG__2                   |     2|
+|753   |        pg2          |ModulePG__3                   |     2|
+|754   |        pg3          |ModulePG__4                   |     2|
+|755   |      ual1           |CLA4bits__parameterized1      |    15|
+|756   |        pg0          |ModulePG__5                   |     2|
+|757   |        pg1          |ModulePG__6                   |     2|
+|758   |        pg2          |ModulePG__7                   |     2|
+|759   |        pg3          |ModulePG__8                   |     1|
++------+---------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 147 ; free virtual = 6281
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1713.984 ; gain = 130.520 ; free physical = 202 ; free virtual = 6336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1713.984 ; gain = 505.793 ; free physical = 209 ; free virtual = 6343
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1713.984 ; gain = 531.629 ; free physical = 196 ; free virtual = 6330
+INFO: [Common 17-1381] The checkpoint '/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1/MultiplyFractions.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MultiplyFractions_utilization_synth.rpt -pb MultiplyFractions_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.40 . Memory (MB): peak = 1737.996 ; gain = 0.000 ; free physical = 193 ; free virtual = 6330
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 14 16:48:35 2018...

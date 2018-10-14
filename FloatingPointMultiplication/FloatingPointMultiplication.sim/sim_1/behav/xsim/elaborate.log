@@ -1,6 +1,6 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 4a66bd78f0ce427ab4ede01fcd8051bc --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Sim_MultiplyFrac_behav xil_defaultlib.Sim_MultiplyFrac -log elaborate.log 
+Running: /media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 4a66bd78f0ce427ab4ede01fcd8051bc --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot PipelineSimulation_behav xil_defaultlib.PipelineSimulation -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,11 +10,17 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Register64bits [register64bits_default]
 Compiling architecture behavioral of entity xil_defaultlib.ModulePG [modulepg_default]
 Compiling architecture behavioral of entity xil_defaultlib.CLA4bits [cla4bits_default]
 Compiling architecture behavioral of entity xil_defaultlib.CLA16bits [cla16bits_default]
 Compiling architecture behavioral of entity xil_defaultlib.CLA32bits [cla32bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddExponents [addexponents_default]
 Compiling architecture behavioral of entity xil_defaultlib.MultiplyFractions [multiplyfractions_default]
 Compiling architecture behavioral of entity xil_defaultlib.MultiplyFractionsWithZeroCheck [multiplyfractionswithzerocheck_d...]
-Compiling architecture behavioral of entity xil_defaultlib.sim_multiplyfrac
-Built simulation snapshot Sim_MultiplyFrac_behav
+Compiling architecture behavioral of entity xil_defaultlib.CorrectExponent [correctexponent_default]
+Compiling architecture behavioral of entity xil_defaultlib.AdjustExponent [adjustexponent_default]
+Compiling architecture behavioral of entity xil_defaultlib.Normalize [normalize_default]
+Compiling architecture behavioral of entity xil_defaultlib.MultiplicationPipeline [multiplicationpipeline_default]
+Compiling architecture behavioral of entity xil_defaultlib.pipelinesimulation
+Built simulation snapshot PipelineSimulation_behav

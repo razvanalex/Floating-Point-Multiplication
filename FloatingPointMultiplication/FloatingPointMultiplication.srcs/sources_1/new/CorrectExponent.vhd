@@ -23,8 +23,9 @@ architecture Behavioral of CorrectExponent is
     signal inAdder1, inAdder2, outAdder: std_logic_vector(15 downto 0) := x"0000";
 begin
     inAdder1(7 downto 0) <= result_in;
-    inAdder2(7 downto 0) <= x"8001"; 
+    inAdder2(7 downto 0) <= x"81"; 
     adder: CLA16bits port map(a =>inAdder1, b => inAdder2, cin => '0', sum => outAdder);
+    result_out <= outAdder(7 downto 0);
     
     -- TODO: check for overflow/underflow
 end Behavioral;

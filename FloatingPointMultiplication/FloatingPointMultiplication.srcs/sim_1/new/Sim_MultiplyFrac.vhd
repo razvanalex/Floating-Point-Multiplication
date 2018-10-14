@@ -11,13 +11,13 @@ architecture Behavioral of Sim_MultiplyFrac is
         A, B: in std_logic_vector(22 downto 0);
         As, Bs: in std_logic;
         flag: in std_logic_vector(1 downto 0);
-        result: out std_logic_vector(23 downto 0);
+        result: out std_logic_vector(24 downto 0);
         Rs: out std_logic
     );
 end component;
     
     signal A, B : std_logic_vector(23 downto 0);
-    signal result : std_logic_vector(24 downto 0);
+    signal result : std_logic_vector(25 downto 0);
     signal flag : std_logic_vector(1 downto 0);
 begin
     uut1 : MultiplyFractionsWithZeroCheck port map(
@@ -26,8 +26,8 @@ begin
                                          As => A(23), 
                                          Bs => B(23),
                                          flag => flag,
-                                         result => result(23 downto 0),
-                                         Rs => result(24)
+                                         result => result(24 downto 0),
+                                         Rs => result(25)
                                      );
     
     sim_proc: process 

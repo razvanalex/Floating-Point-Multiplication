@@ -2,10 +2,17 @@
 2017.4
 Dec 15 2017
 20:57:24
-/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/Sim_MultiplyFrac.vhd,1539519086,vhdl,,,,sim_multiplyfrac,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd,1539527676,vhdl,,,,pipelinesimulation,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/Sim_MultiplyFrac.vhd,1539524061,vhdl,,,,sim_multiplyfrac,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AddExponents.vhd,1539527494,vhdl,,,,addexponents,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AdjustExponent.vhd,1539521163,vhdl,,,,adjustexponent,,,,,,,,
 /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd,1538859243,vhdl2008,,,,cla16bits,,,,,,,,
 /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA32bits.vhd,1538859588,vhdl,,,,cla32bits,,,,,,,,
 /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA4bit.vhd,1538859249,vhdl2008,,,,cla4bits,,,,,,,,
-/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd,1539518468,vhdl,,,,multiplyfractions,,,,,,,,
-/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractionsWithZeroCheck.vhd,1539518853,vhdl,,,,multiplyfractionswithzerocheck,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CorrectExponent.vhd,1539528053,vhdl,,,,correctexponent,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplicationPipeline.vhd,1539526425,vhdl,,,,multiplicationpipeline,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd,1539524642,vhdl,,,,multiplyfractions,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractionsWithZeroCheck.vhd,1539523867,vhdl,,,,multiplyfractionswithzerocheck,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/Normalize.vhd,1539522277,vhdl,,,,normalize,,,,,,,,
 /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd,1538856566,vhdl,,,,modulepg,,,,,,,,
+/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/Register.vhd,1538901681,vhdl,,,,register64bits,,,,,,,,

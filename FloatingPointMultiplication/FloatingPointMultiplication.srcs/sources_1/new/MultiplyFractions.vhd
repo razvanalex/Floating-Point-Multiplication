@@ -6,7 +6,7 @@ entity MultiplyFractions is
 	Port ( 
 		A, B: in std_logic_vector(22 downto 0);
 		As, Bs: in std_logic;
-		result: out std_logic_vector(23 downto 0);
+		result: out std_logic_vector(24 downto 0);
 		Rs: out std_logic
 	);
 end MultiplyFractions;
@@ -62,5 +62,5 @@ begin
     end generate GEN;
     
     -- Return the result of the multiplication
-    result <= A_BUS(23)(23 downto 0);
+    result <= SUM_BUS(22)(24 downto 0);
 end Behavioral;
