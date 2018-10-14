@@ -42,6 +42,7 @@ architecture Behavioral of MultiplicationPipeline is
     component CorrectExponent is
         Port ( 
             result_in: in std_logic_vector(7 downto 0);
+            zero_exp: in std_logic;
             result_out: out std_logic_vector(7 downto 0)
         );
     end component;
@@ -97,13 +98,14 @@ begin
         flag => flag,
         result => FracReg2In(24 downto 0), Rs => FracReg2In(25)
     );
-
+    ExpReg2In(8) <= flag(0) and flag(1);
+    
     -- Load the operands into registers
     ExpReg2: Register64bits port map(d => ExpReg2In, q => ExpReg2Out, clk => clk, load => '1', clear => '0');
     FracReg2: Register64bits port map(d => FracReg2In, q => FracReg2Out, clk => clk, load => '1', clear => '0');
     
     -- Execute Stage 2.
-    correctExp: CorrectExponent port map(result_in => ExpReg2Out(7 downto 0), result_out => ExpReg3In(7 downto 0));
+    correctExp: CorrectExponent port map(result_in => ExpReg2Out(7 downto 0), zero_exp => ExpReg2Out(8), result_out => ExpReg3In(7 downto 0));
     
     -- Load the operands into registers
     ExpReg3: Register64bits port map(d => ExpReg3In, q => ExpReg3Out, clk => clk, load => '1', clear => '0');

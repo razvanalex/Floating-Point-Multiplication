@@ -31,7 +31,7 @@ begin
     
     stim_proc: process begin
         A <= x"00000000";
-        B <= x"00000000";
+        B <= x"0FF00A00";
         wait for 100ns;
     end process;
 
