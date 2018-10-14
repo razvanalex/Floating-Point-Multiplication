@@ -6,7 +6,7 @@ entity MultiplyFractions is
 	Port ( 
 		A, B: in std_logic_vector(22 downto 0);
 		As, Bs: in std_logic;
-		result: out std_logic_vector(22 downto 0);
+		result: out std_logic_vector(23 downto 0);
 		Rs: out std_logic
 	);
 end MultiplyFractions;
@@ -51,16 +51,16 @@ begin
     A_BUS(0)(22 downto 0) <= HiddenBit_A(23 downto 1) when HiddenBit_B(0) = '1' else (others => '0');
     A_BUS(0)(23) <= '0';
     B_BUS(0)(23 downto 0) <= HiddenBit_A(23 downto 0) when HiddenBit_B(1) = '1' else (others => '0');
-    adder1: CLA32bits port map(a => A_BUS(0), b => B_BUS(0), cin => '0', sum => SUM_BUS(0), cout => A_BUS(1)(23));
-    A_BUS(1)(22 downto 0) <= SUM_BUS(0)(23 downto 1);
+    adder1: CLA32bits port map(a => A_BUS(0), b => B_BUS(0), cin => '0', sum => SUM_BUS(0));
+    A_BUS(1)(23 downto 0) <= SUM_BUS(0)(24 downto 1);
     
     -- nth Adder
     GEN: for i in 1 to 22 generate    
         B_BUS(i)(23 downto 0) <= HiddenBit_A(23 downto 0) when HiddenBit_B(i + 1) = '1' else (others => '0');
-        adderNth: CLA32bits port map(a => A_BUS(i), b => B_BUS(i), cin => '0', sum => SUM_BUS(i), cout => A_BUS(i + 1)(23));
-        A_BUS(i + 1)(22 downto 0) <= SUM_BUS(i)(23 downto 1);
+        adderNth: CLA32bits port map(a => A_BUS(i), b => B_BUS(i), cin => '0', sum => SUM_BUS(i));
+        A_BUS(i + 1)(23 downto 0) <= SUM_BUS(i)(24 downto 1);
     end generate GEN;
     
     -- Return the result of the multiplication
-    result <= A_BUS(23)(22 downto 0);
+    result <= A_BUS(23)(23 downto 0);
 end Behavioral;

@@ -12,9 +12,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "/media/razvan/Elements1/Programs/Xilinx/SDK/2017.4/bin:/media/razvan/Elements1/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64;/media/razvan/Elements1/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64;/media/razvan/Elements1/Programs/Xilinx/Vivado/2017.4/bin;";
+  PathVal = "/media/razvan/Elements/Programs/Xilinx/SDK/2017.4/bin:/media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64;/media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64;/media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/bin;";
 } else {
-  PathVal = "/media/razvan/Elements1/Programs/Xilinx/SDK/2017.4/bin:/media/razvan/Elements1/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64;/media/razvan/Elements1/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64;/media/razvan/Elements1/Programs/Xilinx/Vivado/2017.4/bin;" + PathVal;
+  PathVal = "/media/razvan/Elements/Programs/Xilinx/SDK/2017.4/bin:/media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64;/media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64;/media/razvan/Elements/Programs/Xilinx/Vivado/2017.4/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log MultiplyFractions.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractions.tcl" );
+         "-log MultiplyFractionsWithZeroCheck.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractionsWithZeroCheck.tcl" );
 
 
 

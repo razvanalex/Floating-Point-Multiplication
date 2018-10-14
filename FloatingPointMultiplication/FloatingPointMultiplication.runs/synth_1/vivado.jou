@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Oct 13 18:03:45 2018
-# Process ID: 32356
+# Start of session at: Sun Oct 14 13:32:02 2018
+# Process ID: 18594
 # Current directory: /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1
-# Command line: vivado -log MultiplyFractions.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractions.tcl
-# Log file: /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1/MultiplyFractions.vds
+# Command line: vivado -log MultiplyFractionsWithZeroCheck.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractionsWithZeroCheck.tcl
+# Log file: /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1/MultiplyFractionsWithZeroCheck.vds
 # Journal file: /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source MultiplyFractions.tcl -notrace
+source MultiplyFractionsWithZeroCheck.tcl -notrace

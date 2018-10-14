@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539443024">
-  <File Type="VDS-TIMING-PB" Name="MultiplyFractions_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="MultiplyFractions_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="MultiplyFractions.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="MultiplyFractions_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="MultiplyFractions_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="MultiplyFractions_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="MultiplyFractions.vds"/>
-  <File Type="REPORTS-TCL" Name="MultiplyFractions_reports.tcl"/>
-  <File Type="PA-TCL" Name="MultiplyFractions.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539513121">
+  <File Type="VDS-TIMING-PB" Name="MultiplyFractionsWithZeroCheck_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="MultiplyFractionsWithZeroCheck_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="MultiplyFractionsWithZeroCheck.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="MultiplyFractionsWithZeroCheck_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="MultiplyFractionsWithZeroCheck_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="MultiplyFractionsWithZeroCheck_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="MultiplyFractionsWithZeroCheck.vds"/>
+  <File Type="REPORTS-TCL" Name="MultiplyFractionsWithZeroCheck_reports.tcl"/>
+  <File Type="PA-TCL" Name="MultiplyFractionsWithZeroCheck.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/MultiplyFractions.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/PG.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -35,7 +41,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/MultiplyFractions.vhd">
+    <File Path="$PSRCDIR/sources_1/new/MultiplyFractionsWithZeroCheck.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -78,7 +84,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="MultiplyFractions"/>
+      <Option Name="TopModule" Val="MultiplyFractionsWithZeroCheck"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -94,9 +100,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design">
       <Option Id="FlattenHierarchy">1</Option>
     </Step>

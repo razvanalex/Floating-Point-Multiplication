@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.sim/sim_1/behav/xsim/xsim.dir/Sim_MultiplyFrac_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sat Oct 13 17:10:09 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Oct 14 15:12:47 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,19 +14,19 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "411415cc-f807-44d4-b4f2-41a823e2ef2c" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "4a66bd78f0ce427ab4ede01fcd8051bc" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "26" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "41" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Ubuntu" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Ubuntu 18.04.1 LTS" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "2968.843 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "3519.573 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "75" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.04_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "139836_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2436479330 -regid "" -xml /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.sim/sim_1/behav/xsim/xsim.dir/Sim_MultiplyFrac_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.sim/sim_1/behav/xsim/xsim.dir/Sim_MultiplyFrac_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.sim/sim_1/behav/xsim/xsim.dir/Sim_MultiplyFrac_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key iteration -value "74" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.06_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "139844_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2639094374 -regid "" -xml /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.sim/sim_1/behav/xsim/xsim.dir/Sim_MultiplyFrac_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.sim/sim_1/behav/xsim/xsim.dir/Sim_MultiplyFrac_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.sim/sim_1/behav/xsim/xsim.dir/Sim_MultiplyFrac_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

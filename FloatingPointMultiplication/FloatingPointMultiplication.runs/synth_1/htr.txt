@@ -6,4 +6,4 @@
 # Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log MultiplyFractions.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractions.tcl
+vivado -log MultiplyFractionsWithZeroCheck.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiplyFractionsWithZeroCheck.tcl

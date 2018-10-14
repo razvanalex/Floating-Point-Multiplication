@@ -28,8 +28,9 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd
   /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd
+  /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/PG.vhd
+  /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractionsWithZeroCheck.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
   /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CLA16bits.vhd
@@ -48,10 +49,10 @@ read_xdc /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/Floati
 set_property used_in_implementation false [get_files /home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/constraints_1/Nexys4DDR_Master.xdc]
 
 
-synth_design -top MultiplyFractions -part xc7a100tcsg324-1 -flatten_hierarchy none
+synth_design -top MultiplyFractionsWithZeroCheck -part xc7a100tcsg324-1 -flatten_hierarchy none
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef MultiplyFractions.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file MultiplyFractions_utilization_synth.rpt -pb MultiplyFractions_utilization_synth.pb"
+write_checkpoint -force -noxdef MultiplyFractionsWithZeroCheck.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file MultiplyFractionsWithZeroCheck_utilization_synth.rpt -pb MultiplyFractionsWithZeroCheck_utilization_synth.pb"
