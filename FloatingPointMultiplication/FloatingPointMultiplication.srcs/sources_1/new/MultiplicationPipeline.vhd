@@ -23,9 +23,9 @@ architecture Behavioral of MultiplicationPipeline is
     
     component Normalize is
         Port (
-            input: in std_logic_vector(25 downto 0);
+            input: in std_logic_vector(26 downto 0);
             output: out std_logic_vector(23 downto 0);
-            addTwo: out std_logic
+            normFlag: out std_logic_vector(1 downto 0)
         );
     end component;
 
@@ -58,13 +58,13 @@ architecture Behavioral of MultiplicationPipeline is
     component AdjustExponent is
         Port ( 
             input: in std_logic_vector(7 downto 0);
-            addTwo: in std_logic;
+            normFlag: in std_logic_vector(1 downto 0);
             output: out std_logic_vector(7 downto 0)
         );
     end component;
     
     signal flag: std_logic_vector(1 downto 0);
-    signal addTwo: std_logic;
+    signal normFlag: std_logic_vector(1 downto 0);
     
     signal ExpReg1In, ExpReg1Out: std_logic_vector(63 downto 0) := x"0000000000000000";
     signal FracReg1In, FracReg1Out: std_logic_vector(63 downto 0) := x"0000000000000000";
@@ -87,18 +87,27 @@ begin
     FracReg1In(47) <= A(31);
     FracReg1In(46 downto 24) <= A(22 downto 0);
     FracReg1In(23) <= B(31);
-    FracReg1In(22 downto 0) <= B(22 downto  0);
+    FracReg1In(22 downto 0) <= B(22 downto 0);
     FracReg1: Register64bits port map(d => FracReg1In, q => FracReg1Out, clk => clk, load => '1', clear => '0');
     
     -- Execute Stage 1.
-    addExps: AddExponents port map(a => ExpReg1Out(15 downto 8), b => ExpReg1Out( 7 downto 0), result => ExpReg2In(7 downto 0), flag => flag);
+    addExps: AddExponents port map(
+        a => ExpReg1Out(15 downto 8), 
+        b => ExpReg1Out( 7 downto 0), 
+        result => ExpReg2In(7 downto 0), 
+        flag => flag
+    );
     multFrac: MultiplyFractionsWithZeroCheck port map(
-        A => FracReg1Out(46 downto 24), B => FracReg1In(22 downto 0),
-        As => FracReg1Out(47), Bs => FracReg1Out(23),
+        A => FracReg1Out(46 downto 24), 
+        B => FracReg1Out(22 downto 0),
+        As => FracReg1Out(47), 
+        Bs => FracReg1Out(23),
         flag => flag,
-        result => FracReg2In(24 downto 0), Rs => FracReg2In(25)
+        result => FracReg2In(24 downto 0), 
+        Rs => FracReg2In(25)
     );
     ExpReg2In(8) <= flag(0) and flag(1);
+    FracReg2In(30) <= flag(0) and flag(1);
     
     -- Load the operands into registers
     ExpReg2: Register64bits port map(d => ExpReg2In, q => ExpReg2Out, clk => clk, load => '1', clear => '0');
@@ -112,11 +121,19 @@ begin
     FracReg3: Register64bits port map(d => FracReg2Out, q => FracReg3Out, clk => clk, load => '1', clear => '0');
     
     -- Execute Stage 3.
-    adjExp: AdjustExponent port map(input => ExpReg3Out(7 downto 0), addTwo => addTwo, output => ExpReg4In(7 downto 0));
-    normFrac: Normalize port map(input => FracReg3Out(25 downto 0), addTwo => addTwo, output => FracReg4In(23 downto 0));
+    adjExp: AdjustExponent port map(input => ExpReg3Out(7 downto 0), 
+        normFlag => normFlag, 
+        output => ExpReg4In(7 downto 0)
+    );
+    
+    normFrac: Normalize port map(
+        input(26 downto 0) => FracReg3Out(26 downto 0),
+        normFlag => normFlag, 
+        output => FracReg4In(23 downto 0)
+    );
     
     -- Load the operands into registers
-    FracRep3: Register64bits port map(d => ExpReg4In, q => ExpReg4Out, clk => clk, load => '1', clear => '0');
+    ExpReg4: Register64bits port map(d => ExpReg4In, q => ExpReg4Out, clk => clk, load => '1', clear => '0');
     FracReg4: Register64bits port map(d => FracReg4In, q => FracReg4Out, clk => clk, load => '1', clear => '0');
     
     -- Return the result

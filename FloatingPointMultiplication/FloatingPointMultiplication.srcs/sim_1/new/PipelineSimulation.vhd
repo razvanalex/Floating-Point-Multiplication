@@ -23,16 +23,31 @@ begin
     clk_proc : process begin
         loop
             clk <= '1';
-            wait for 5ns;
+            wait for 10ns;
             clk <= '0';
-            wait for 5ns;
+            wait for 10ns;
         end loop;
     end process;
     
     stim_proc: process begin
-        A <= x"00000000";
-        B <= x"0FF00A00";
-        wait for 100ns;
+        wait for 5ns;
+        
+        A <= x"42F6E989";
+        B <= x"439C0FBE";
+        wait for 20ns;
+        
+        A <= x"FFFFFFFF";
+        B <= x"00000000";
+        wait for 20ns;
+        
+        A <= x"3F800000";
+        B <= x"439C0FBE";
+        wait for 20ns;
+        
+        A <= x"7FFFFFFF";
+        B <= x"3F800000";
+        wait for 1000ns;
+        
     end process;
 
 end Behavioral;

@@ -27,11 +27,11 @@ begin
     inAdder2(7 downto 0) <= x"81"; 
     adder: CLA16bits port map(a =>inAdder1, b => inAdder2, cin => '0', sum => outAdder);
 
-    proc_check_zero: process(result_in)
+    process (zero_exp, result_in, outAdder)
     begin
         if zero_exp = '0' then
             result_out <= result_in;
-        else 
+        else
             result_out <= outAdder(7 downto 0);
         end if;
     end process;
