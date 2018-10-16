@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/Normalize.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Normalize
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation

@@ -18,14 +18,17 @@ architecture Behavioral of MultiplyFractionsWithZeroCheck is
         Port ( 
             A, B: in std_logic_vector(22 downto 0);
             As, Bs: in std_logic;
+            hiddenBits: in std_logic_vector(1 downto 0);
             result: out std_logic_vector(24 downto 0);
             Rs: out std_logic
         );
     end component;
     
     signal temp_result: std_logic_vector(24 downto 0);
+    signal hiddenBits: std_logic_vector(1 downto 0) := "11";
 begin
-    mult : MultiplyFractions port map(A => A, B => B, As => As, Bs => Bs, result => temp_result, Rs => Rs);
+    hiddenBits <= flag;
+    mult : MultiplyFractions port map(A => A, B => B, As => As, Bs => Bs, hiddenBits => hiddenBits, result => temp_result, Rs => Rs);
 
     -- Check for Zeros
     process (flag, A, B, temp_result)

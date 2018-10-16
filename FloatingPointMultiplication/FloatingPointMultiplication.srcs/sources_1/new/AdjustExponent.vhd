@@ -30,6 +30,4 @@ begin
               x"FF" when normFlag = "10" and outAdder(8) = '1' else -- Overflow => Set exponent to 0xFF
               x"00" when normFlag = "00" else -- Set e = 0
               input when normFlag = "01"; -- No normalization, copy the exponent
-              
-    -- TODO: check for overflow/underflow
 end Behavioral;

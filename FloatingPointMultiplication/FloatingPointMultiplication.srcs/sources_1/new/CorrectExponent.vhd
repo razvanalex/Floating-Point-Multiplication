@@ -48,6 +48,4 @@ begin
             end if;
         end if;
     end process;
-  
-    -- TODO: check for overflow/underflow
 end Behavioral;

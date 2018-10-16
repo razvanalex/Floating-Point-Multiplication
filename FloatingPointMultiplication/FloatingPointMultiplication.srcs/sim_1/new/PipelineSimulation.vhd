@@ -33,20 +33,15 @@ begin
         wait for 5ns;
         
         -- RANDOM TESTS
-        A <= x"42353EE5";
-        B <= x"48DFDB28";
-        RealResult <= transport x"4B9E7CF3" after 75ns;
+        A <= x"42350000";
+        B <= x"4173B646";
+        RealResult <= transport x"442C4FDF" after 75ns;
         wait for 20ns;
         
         A <= x"45AAD8FF";
         B <= x"479A30B9";
         RealResult <= transport x"4DCDCE1B" after 75ns;
-        wait for 20ns;
-        
-        A <= x"35FAD8FF";
-        B <= x"578A297E";
-        RealResult <= transport x"4E0761A2" after 75ns;
-        wait for 20ns;
+        wait for 20ns; 
         
         A <= x"28DFC904";
         B <= x"B7323500";
@@ -125,9 +120,9 @@ begin
              
         A <= x"A527A03D";
         B <= x"0BDEB51D";
-        RealResult <= transport x"80000000" after 75ns;
+        RealResult <= transport x"80000000" after 75ns;     
         wait for 1000ns;
-   
+
     end process;
 
 end Behavioral;

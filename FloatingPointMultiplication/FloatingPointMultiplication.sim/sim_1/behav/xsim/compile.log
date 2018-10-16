@@ -334,3 +334,47 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/Fl
 INFO: [VRFC 10-307] analyzing entity PipelineSimulation
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/Normalize.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Normalize
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/AdjustExponent.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AdjustExponent
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/CorrectExponent.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CorrectExponent
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplyFractions
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractionsWithZeroCheck.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplyFractionsWithZeroCheck
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractionsWithZeroCheck.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplyFractionsWithZeroCheck
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractionsWithZeroCheck.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplyFractionsWithZeroCheck
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractionsWithZeroCheck.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplyFractionsWithZeroCheck
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sources_1/new/MultiplyFractions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplyFractions
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/razvan/Workplace/CN/CN2-Tema-1/FloatingPointMultiplication/FloatingPointMultiplication.srcs/sim_1/new/PipelineSimulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PipelineSimulation
