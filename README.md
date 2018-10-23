@@ -63,7 +63,8 @@ is INF, and for underflow is 0.
 in elementary school, or by using shift register.
 
 **Step 6.** Normalize the result (before dot, you must have only the bit "1" and
-after dot you must have the mantissa - e.g. 1.100101010...)
+after dot you must have the mantissa - e.g. 1.100101010...) and also check for 
+rounding for the significant (the 24th bit of the mantissa should be 1).
 
 **Step 7.** If the result was normalized, then add 1 to the exponent.
 
@@ -85,7 +86,7 @@ both exponents and subtract the bias, so we have:
   1 00000110
     01111111
     -------- (-)
-  0 10000111    (without overflow or underflow)
+  0 10000111    (no overflow nor underflow)
 ```
 
 Our exponent, for now, is `e = 10000111`.
@@ -96,10 +97,10 @@ is done right it the following diagram).
                          1.11110110000000000000000
                          1.01010000000000000000000
                          ------------------------- (*)
-                              0000000000000000000
-      1.11110110000000000000000
-    1.11110110000000000000000
-  1.11110110000000000000000
+                               0000000000000000000
+       111110110000000000000000
+     111110110000000000000000
+   111110110000000000000000
   ----------------------------------------------- (+)
  10.1001001011100000000000000000000000000000000000
 ```
@@ -107,7 +108,9 @@ Note that we added the hidden bit before dot. Also, note that our number has
 more bits than we need, so we will take first 23 bits after dot.
 Therefore, `m = 10.10010010111000000000000`. Now, we need to normalize the result,
 so the new `m = 1.01001001011100000000000` and we shall add 1 to the exponent: 
-`e = 10000111 + 1 = 10001000`.  
+`e = 10000111 + 1 = 10001000`.  There we didn't need to round the significant 
+because the 24th bit after `'.'` was 0.
+
 Finally, `result = 1 10001000 01001001011100000000000`. You can check by yourself
 on http://weitz.de/ieee/ that this is the right answer (be aware that exponent 
 and mantissa are swapped).
@@ -139,6 +142,13 @@ Note the loneliest XOR in the top right corner. Gray modules are adders
 
 ![alt text](https://gitlab.cs.pub.ro/razvan.smadu/CN2-Tema-1/raw/859b8ef5a667c9599a89fc6e01872f007904af60/Resources/Image1.png)
 
+### Simulation of multiplication pipeline in VHDL
+In the following image, you can see that there are some clock periods in which
+the first instruction has to complete the pipeline, until it reaches the 
+last stage where the result is returned. The line of R[32:0] is the result 
+of the pipeline, and the RealResult[31:0] has the results computed by another 
+program, and hardcoded in the test-bench. 
+![alt text](https://gitlab.cs.pub.ro/razvan.smadu/CN2-Tema-1/raw/ad0c41363e76e358e85f2bfc33a9083e1a564ce4/Resources/Simulation.png)
 
 ## References
 [1] https://www.electronicshub.org/binary-multiplication  
