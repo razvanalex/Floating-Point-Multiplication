@@ -32,7 +32,7 @@ begin
         elsif exception = "00" then
             if input(24) = '0' then
                 output(22 downto 0) <= input(22 downto 0);
-                normFlag <= "01"; -- Do not shit
+                normFlag <= "01"; -- Do not shift
             else 
                 output(22 downto 0) <= input(23 downto 1);
                 normFlag <= "10"; -- Shit
