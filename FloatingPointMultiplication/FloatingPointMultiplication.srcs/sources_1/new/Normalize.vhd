@@ -35,7 +35,7 @@ begin
                 normFlag <= "01"; -- Do not shift
             else 
                 output(22 downto 0) <= input(23 downto 1);
-                normFlag <= "10"; -- Shit
+                normFlag <= "10"; -- Shift
             end if;
         end if;
     end process;
