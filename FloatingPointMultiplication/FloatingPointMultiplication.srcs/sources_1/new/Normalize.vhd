@@ -27,7 +27,7 @@ begin
              normFlag <= "00"; -- Set number = 0
              output(22 downto 0) <= "00000000000000000000000";
         elsif exception = "10" then
-            normFlag <= "01"; -- Do not shit
+            normFlag <= "01"; -- Do not shift
             output(22 downto 0) <= "00000000000000000000000"; -- Set number = INF
         elsif exception = "00" then
             if input(24) = '0' then
