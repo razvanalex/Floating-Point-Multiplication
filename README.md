@@ -148,7 +148,7 @@ the first instruction has to complete the pipeline, until it reaches the
 last stage where the result is returned. The line of R[32:0] is the result 
 of the pipeline, and the RealResult[31:0] has the results computed by another 
 program, and hardcoded in the test-bench. 
-![alt text](https://gitlab.cs.pub.ro/razvan.smadu/CN2-Tema-1/raw/ad0c41363e76e358e85f2bfc33a9083e1a564ce4/Resources/Simulation.png)
+![alt text](https://github.com/razvanalex/Floating-Point-Multiplication/blob/master/Resources/Simulation.png)
 
 ## References
 [1] https://www.electronicshub.org/binary-multiplication  
