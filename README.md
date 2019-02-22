@@ -140,7 +140,7 @@ Note the loneliest XOR in the top right corner. Gray modules are adders
 (carry look ahead) and yellow modules (except for XOR) are AND gates.  
 
 
-![alt text](https://gitlab.cs.pub.ro/razvan.smadu/CN2-Tema-1/raw/859b8ef5a667c9599a89fc6e01872f007904af60/Resources/Image1.png)
+![alt text](https://github.com/razvanalex/Floating-Point-Multiplication/blob/master/Resources/Image1.png)
 
 ### Simulation of multiplication pipeline in VHDL
 In the following image, you can see that there are some clock periods in which
